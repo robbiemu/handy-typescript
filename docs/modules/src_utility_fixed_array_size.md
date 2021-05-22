@@ -24,4 +24,4 @@ simple fixed-size array type for typescript
 | `T` | - | - |
 | `M` | *string* | ``"0"`` |
 
-Defined in: [src/utility/fixed-array-size.ts:5](https://github.com/robbiemu/handy-typescript/blob/fb19fe7/src/utility/fixed-array-size.ts#L5)
+Defined in: [src/utility/fixed-array-size.ts:5](https://github.com/robbiemu/handy-typescript/blob/bc754b1/src/utility/fixed-array-size.ts#L5)

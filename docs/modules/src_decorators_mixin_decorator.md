@@ -40,4 +40,4 @@ example:
 
 **Returns:** ClassDecorator
 
-Defined in: [src/decorators/mixin.decorator.ts:21](https://github.com/robbiemu/handy-typescript/blob/fb19fe7/src/decorators/mixin.decorator.ts#L21)
+Defined in: [src/decorators/mixin.decorator.ts:21](https://github.com/robbiemu/handy-typescript/blob/bc754b1/src/decorators/mixin.decorator.ts#L21)

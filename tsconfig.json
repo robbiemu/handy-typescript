@@ -12,7 +12,9 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "isolatedModules": true,
-    "lib": ["esNext"],
+    "lib": [
+      "esNext"
+    ],
     "moduleResolution": "node",
     "module": "commonjs",
     "newLine": "LF",
@@ -23,10 +25,14 @@
     "noEmit": false,
     "outDir": "./dist",
     "paths": {
-      "@src/*": ["*"],
+      "@src/*": [
+        "*"
+      ],
     },
     "plugins": [
-      { "transform": "ts-transformer-keys/transformer" }
+      {
+        "transform": "ts-transformer-keys/transformer"
+      }
     ],
     "pretty": true,
     "resolveJsonModule": true,
@@ -36,11 +42,25 @@
     "target": "es2019",
     "useDefineForClassFields": true
   },
+  "typedocOptions": {
+    "entryPoints": [
+      "src",
+      "types"
+    ],
+    "exclude": [
+      "**/*.(spec|test|mock).ts",
+      "**/tests/*",
+      "**/mock/*",
+    ],
+    "out": "docs"
+  },
   "include": [
-    "src/**/*.ts", 
-    "src/**/*.json", 
+    "src/**/*.ts",
+    "src/**/*.json",
     ".env",
     "types/**/*.d.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

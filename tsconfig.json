@@ -1,0 +1,46 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitBOM": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "lib": ["esNext"],
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "newLine": "LF",
+    "noEmitOnError": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmit": false,
+    "outDir": "./dist",
+    "paths": {
+      "@src/*": ["*"],
+    },
+    "plugins": [
+      { "transform": "ts-transformer-keys/transformer" }
+    ],
+    "pretty": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "sourceRoot": "src",
+    "stripInternal": true,
+    "target": "es2019",
+    "useDefineForClassFields": true
+  },
+  "include": [
+    "src/**/*.ts", 
+    "src/**/*.json", 
+    ".env",
+    "types/**/*.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

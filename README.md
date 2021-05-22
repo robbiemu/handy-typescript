@@ -1,4 +1,4 @@
 # handy-typescript
 simple collection of handy typescript class, functions, and types
 
-see docs for details
+see [docs](https://robbiemu.github.io/handy-typescript/modules.html) for details

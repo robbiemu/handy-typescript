@@ -4,7 +4,6 @@
   "description": "a collection of tools I use in typescript",
   "main": "dist/index.js",
   "scripts": {
-    "precommit": "npm-run-all -s doc lint-staged",
     "pretest": "jest --clearCache",
     "test": "jest",
     "predoc": "echo 'preparing documentation' && npm link typedoc",
@@ -39,5 +38,10 @@
     "typedoc": "^0.20.36",
     "typedoc-plugin-markdown": "^3.8.1",
     "typescript": "^4.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "npm-run-all -s doc lint-staged"
+    }
   }
 }

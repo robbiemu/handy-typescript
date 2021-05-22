@@ -12,7 +12,7 @@
 
 ### compose
 
-▸ **compose**(...`fns`: *any*[]): *function*
+▸ **compose**(...`fns`: Function[]): *function*
 
 compose an ordered list of execution
 
@@ -20,10 +20,10 @@ compose an ordered list of execution
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `...fns` | *any*[] | functions to execute |
+| `...fns` | Function[] | functions to execute |
 
 **Returns:** () => *void*
 
 a function taht will call each fn in turn
 
-Defined in: src/utility/compose.ts:6
+Defined in: [src/utility/compose.ts:6](https://github.com/robbiemu/handy-typescript/blob/883f292/src/utility/compose.ts#L6)

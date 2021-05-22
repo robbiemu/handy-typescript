@@ -24,4 +24,4 @@ comparitor to find defined values
 
 **Returns:** *boolean*
 
-Defined in: src/comparitors/is-defined.ts:5
+Defined in: [src/comparitors/is-defined.ts:6](https://github.com/robbiemu/handy-typescript/blob/883f292/src/comparitors/is-defined.ts#L6)

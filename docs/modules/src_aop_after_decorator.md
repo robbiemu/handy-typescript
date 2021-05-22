@@ -22,6 +22,6 @@ decorator execute code _after_ method completes
 | :------ | :------ | :------ |
 | `afterFunction` | Function | method to decorate |
 
-**Returns:** (`_targetClass`: Object, `_propertyKey`: *string* \| *symbol*, `descriptor`: PropertyDescriptor) => PropertyDescriptor
+**Returns:** (`_targetClass`: *Partial*<(...`args`: *any*[]) => *any*\>, `_propertyKey`: *string* \| *symbol*, `descriptor`: PropertyDescriptor) => PropertyDescriptor
 
-Defined in: src/aop/after.decorator.ts:5
+Defined in: [src/aop/after.decorator.ts:5](https://github.com/robbiemu/handy-typescript/blob/883f292/src/aop/after.decorator.ts#L5)

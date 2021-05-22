@@ -4,6 +4,10 @@
 
 ## Table of contents
 
+### Interfaces
+
+- [Constructable](../interfaces/types_constructor.constructable.md)
+
 ### Type aliases
 
 - [Constructor](types_constructor.md#constructor)
@@ -12,20 +16,8 @@
 
 ### Constructor
 
-Ƭ **Constructor**: (...`args`: *any*[]) => {}
+Ƭ **Constructor**: *Partial*<(...`args`: *any*[]) => *any*\>
 
 Constructor - a Class
 
-#### Type declaration
-
-\+ (...`args`: *any*[]): *object*
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `...args` | *any*[] |
-
-**Returns:** *object*
-
-Defined in: types/constructor.d.ts:4
+Defined in: [types/constructor.d.ts:4](https://github.com/robbiemu/handy-typescript/blob/883f292/types/constructor.d.ts#L4)

@@ -29,8 +29,8 @@ assert(cases.some(isOdd))
 | `property` | *string* | that is required on the comparator |
 | `evaluator` | Function | that is called in the comparator, on the property, to determine the matching of the value |
 
-**Returns:** (`value`: { [prop: string]: *any*;  }) => *any*
+**Returns:** (`value`: { [prop: string]: *any*;  }) => *boolean*
 
 comparator
 
-Defined in: src/comparitors/factory-has-value.ts:15
+Defined in: [src/comparitors/factory-has-value.ts:15](https://github.com/robbiemu/handy-typescript/blob/883f292/src/comparitors/factory-has-value.ts#L15)

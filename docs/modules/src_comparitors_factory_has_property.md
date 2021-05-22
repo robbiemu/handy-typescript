@@ -17,7 +17,7 @@
 generate a comparator that looks for existance of a property
 example:
 ```typescript
-const cases = [ {a:2}, {a:3, 'dummy-data: true}, {a:4} ]
+const cases = [ {a:2}, {a:3, 'dummy-data': true}, {a:4} ]
 const hasDummyData = factoryHasProperty('dummy-data')
 assert(cases.some(hasDummyData))
 ```
@@ -32,4 +32,4 @@ assert(cases.some(hasDummyData))
 
 comparator
 
-Defined in: src/comparitors/factory-has-property.ts:12
+Defined in: [src/comparitors/factory-has-property.ts:12](https://github.com/robbiemu/handy-typescript/blob/883f292/src/comparitors/factory-has-property.ts#L12)

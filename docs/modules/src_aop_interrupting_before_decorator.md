@@ -24,6 +24,6 @@ the parameters with an [AopDecoratorPayload](../interfaces/src_aop_aop_decorator
 | :------ | :------ | :------ |
 | `before` | Function | method to optionally interrup t and execute before the method |
 
-**Returns:** (`target`: *any*, `propertyKey`: *string*, `descriptor`: PropertyDescriptor) => *void*
+**Returns:** (`target`: *Partial*<(...`args`: *any*[]) => *any*\>, `propertyKey`: *string*, `descriptor`: PropertyDescriptor) => *void*
 
-Defined in: src/aop/interrupting-before.decorator.ts:9
+Defined in: [src/aop/interrupting-before.decorator.ts:9](https://github.com/robbiemu/handy-typescript/blob/883f292/src/aop/interrupting-before.decorator.ts#L9)

@@ -27,13 +27,13 @@ stringify possibly circular references
 
 json-like string without circular references
 
-Defined in: src/utility/clean-stringify.ts:6
+Defined in: [src/utility/clean-stringify.ts:8](https://github.com/robbiemu/handy-typescript/blob/883f292/src/utility/clean-stringify.ts#L8)
 
 ___
 
 ### copyWithoutCircularReferences
 
-▸ **copyWithoutCircularReferences**(`references`: *any*, `object`: *any*): *object*
+▸ **copyWithoutCircularReferences**(`references`: *any*[], `object`: *any*): Object
 
 recursive function to build a copy of an object with '###_Circular_###' replacing circular references
 
@@ -41,11 +41,11 @@ recursive function to build a copy of an object with '###_Circular_###' replacin
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `references` | *any* | the list of references so far encountered |
+| `references` | *any*[] | the list of references so far encountered |
 | `object` | *any* | the object copied |
 
-**Returns:** *object*
+**Returns:** Object
 
 copy of an object without circular references
 
-Defined in: src/utility/clean-stringify.ts:19
+Defined in: [src/utility/clean-stringify.ts:21](https://github.com/robbiemu/handy-typescript/blob/883f292/src/utility/clean-stringify.ts#L21)

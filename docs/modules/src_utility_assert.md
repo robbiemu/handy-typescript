@@ -16,7 +16,7 @@
 
 ### assert
 
-▸ **assert**(`condition`: *any*, `msg?`: *string*): asserts condition
+▸ **assert**(`condition`: Boolean \| *any*, `msg?`: *string*): asserts condition
 
 assert a condition or throw
 
@@ -24,9 +24,9 @@ assert a condition or throw
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `condition` | *any* | boolean to assert |
+| `condition` | Boolean \| *any* | boolean to assert |
 | `msg?` | *string* | optional message to throw on error |
 
 **Returns:** asserts condition
 
-Defined in: src/utility/assert.ts:11
+Defined in: [src/utility/assert.ts:11](https://github.com/robbiemu/handy-typescript/blob/883f292/src/utility/assert.ts#L11)

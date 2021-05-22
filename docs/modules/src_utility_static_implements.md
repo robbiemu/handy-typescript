@@ -12,7 +12,7 @@
 
 ### staticImplements
 
-▸ **staticImplements**<T\>(): *function*
+▸ **staticImplements**<T\>(): Function
 
 simple static implementation type checking for typescript
 
@@ -22,6 +22,6 @@ simple static implementation type checking for typescript
 | :------ |
 | `T` |
 
-**Returns:** <U\>(`ctor`: U) => U
+**Returns:** Function
 
-Defined in: src/utility/static-implements.ts:4
+Defined in: [src/utility/static-implements.ts:4](https://github.com/robbiemu/handy-typescript/blob/883f292/src/utility/static-implements.ts#L4)

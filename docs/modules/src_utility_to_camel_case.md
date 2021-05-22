@@ -26,4 +26,4 @@ convert a string of whole words to camel case
 
 camel cased string
 
-Defined in: [src/utility/to-camel-case.ts:6](https://github.com/robbiemu/handy-typescript/blob/883f292/src/utility/to-camel-case.ts#L6)
+Defined in: [src/utility/to-camel-case.ts:6](https://github.com/robbiemu/handy-typescript/blob/fb19fe7/src/utility/to-camel-case.ts#L6)

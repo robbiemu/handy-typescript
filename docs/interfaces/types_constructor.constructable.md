@@ -16,4 +16,4 @@
 
 • **constuctor**: Function
 
-Defined in: [types/constructor.d.ts:7](https://github.com/robbiemu/handy-typescript/blob/883f292/types/constructor.d.ts#L7)
+Defined in: [types/constructor.d.ts:7](https://github.com/robbiemu/handy-typescript/blob/fb19fe7/types/constructor.d.ts#L7)

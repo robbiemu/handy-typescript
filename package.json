@@ -6,10 +6,10 @@
   "scripts": {
     "pretest": "jest --clearCache",
     "test": "jest",
-    "predoc": "npm link typedoc && echo himom",
+    "predoc": "echo 'preparing documentation' && npm link typedoc",
     "doc": "typedoc",
     "postdoc": "git add -A docs",
-    "prelint-staged": "npm link lint-staged",
+    "prelint-staged": "echo 'preparing documentation' && npm link lint-staged",
     "lint-staged": "lint-staged"
   },
   "keywords": [

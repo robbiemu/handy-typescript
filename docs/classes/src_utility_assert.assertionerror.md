@@ -46,7 +46,7 @@ error of type assertion
 
 Inherited from: Error.constructor
 
-Defined in: ../../../../../usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts:978
+Defined in: node_modules/typescript/lib/lib.es5.d.ts:978
 
 ## Properties
 
@@ -56,7 +56,7 @@ Defined in: ../../../../../usr/local/lib/node_modules/typescript/lib/lib.es5.d.t
 
 Inherited from: Error.message
 
-Defined in: ../../../../../usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts:974
+Defined in: node_modules/typescript/lib/lib.es5.d.ts:974
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 Inherited from: Error.name
 
-Defined in: ../../../../../usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts:973
+Defined in: node_modules/typescript/lib/lib.es5.d.ts:973
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 Inherited from: Error.stack
 
-Defined in: ../../../../../usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts:975
+Defined in: node_modules/typescript/lib/lib.es5.d.ts:975
 
 ___
 

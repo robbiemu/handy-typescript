@@ -2,7 +2,7 @@
  * generate a comparator that looks for existance of a property
  * example:
  * ```typescript
- * const cases = [ {a:2}, {a:3, 'dummy-data: true}, {a:4} ]
+ * const cases = [ {a:2}, {a:3, 'dummy-data': true}, {a:4} ]
  * const hasDummyData = factoryHasProperty('dummy-data')
  * assert(cases.some(hasDummyData))
  * ```

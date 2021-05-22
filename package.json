@@ -5,7 +5,11 @@
   "main": "dist/index.js",
   "scripts": {
     "pretest": "jest --clearCache",
-    "test": "jest"
+    "test": "jest",
+    "predoc": "npm link typedoc",
+    "doc": "typedoc",
+    "prelint-staged": "npm link lint-staged",
+    "lint-staged": "lint-staged"
   },
   "keywords": [
     "typescript"
@@ -36,7 +40,7 @@
   },
   "husky": {
     "hooks": {
-      "precommit": "precommit.sh"
+      "precommit": "npm-run-all -s doc lint-staged"
     }
   }
 }

@@ -17,6 +17,7 @@ d = ['a', true]; // error
 d.push('d'); // error
 
 let e: FixedSizeArray<0, string>;
+
 // we get an error, but it is not what we want
 // however, in this case void could be a better type
 // why do we want to define an immutable array of zero elements?

@@ -17,7 +17,7 @@
 
 • **flag**: *boolean*
 
-Defined in: [src/aop/aop-decorator-payload.interface.ts:2](https://github.com/robbiemu/handy-typescript/blob/0fc5e0a/src/aop/aop-decorator-payload.interface.ts#L2)
+Defined in: [src/aop/aop-decorator-payload.interface.ts:2](https://github.com/robbiemu/handy-typescript/blob/59044bb/src/aop/aop-decorator-payload.interface.ts#L2)
 
 ___
 
@@ -25,4 +25,4 @@ ___
 
 • **payload**: *any*
 
-Defined in: [src/aop/aop-decorator-payload.interface.ts:3](https://github.com/robbiemu/handy-typescript/blob/0fc5e0a/src/aop/aop-decorator-payload.interface.ts#L3)
+Defined in: [src/aop/aop-decorator-payload.interface.ts:3](https://github.com/robbiemu/handy-typescript/blob/59044bb/src/aop/aop-decorator-payload.interface.ts#L3)

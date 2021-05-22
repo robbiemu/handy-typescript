@@ -32,4 +32,4 @@ assert(cases.some(hasDummyData))
 
 comparator
 
-Defined in: [src/comparitors/factory-has-property.ts:12](https://github.com/robbiemu/handy-typescript/blob/0fc5e0a/src/comparitors/factory-has-property.ts#L12)
+Defined in: [src/comparitors/factory-has-property.ts:12](https://github.com/robbiemu/handy-typescript/blob/59044bb/src/comparitors/factory-has-property.ts#L12)

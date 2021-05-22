@@ -19,7 +19,7 @@ export function Before(beforeFunction: Function) {
         return result;
       }
 
-      return res.bind(this)()
+      return res.bind(this)();
     }
 
     return descriptor

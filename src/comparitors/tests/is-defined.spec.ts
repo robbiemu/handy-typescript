@@ -1,4 +1,4 @@
-import {isDefined} from '../is-defined'
+import { isDefined } from '../is-defined'
 
 describe('isDefined', () => {
   it('should detect definite values (excluding undefined and null)', () => {

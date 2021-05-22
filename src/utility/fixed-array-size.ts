@@ -4,7 +4,7 @@
 // we use numeric literal types for length as TS 2.7 does for fixed size tuples.
 export type FixedSizeArray<N extends number, T, M extends string = '0'> = {
   readonly [k in M]: any
-} & {length: N} & ReadonlyArray<T>
+} & { length: N } & ReadonlyArray<T>
 
 /*
 let d: FixedSizeArray<2, string>;

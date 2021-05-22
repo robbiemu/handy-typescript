@@ -8,7 +8,7 @@ export class AssertionError extends Error {}
  * @param condition boolean to assert
  * @param msg optional message to throw on error
  */
-export function assert(condition: any, msg?: string): asserts condition {
+export function assert(condition: Boolean | any, msg?: string): asserts condition {
   if (!condition) {
     throw new AssertionError(msg)
   }

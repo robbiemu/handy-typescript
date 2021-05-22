@@ -1,4 +1,4 @@
-import {isDefined} from './is-defined'
+import { isDefined } from './is-defined'
 
 /**
  * generate a comparator that looks for existance of a value at a property
@@ -13,7 +13,7 @@ import {isDefined} from './is-defined'
  * @returns comparator
  */
 export function factoryHasValue(property: string, evaluator: Function = isDefined) {
-  return function (value: {[prop: string]: any}) {
+  return function (value: { [prop: string]: any }): boolean {
     return value?.[property] ? evaluator(value?.[property]) : false
   }
 }

@@ -16,8 +16,8 @@ export interface LogMethodsConfig {
  * decorator to log method calls and the paramters passed
  * @param config logging configuration
  */
-export function LogMethods(config: LogMethodsConfig = {when: true}) {
-  return target => {
+export function LogMethods(config: LogMethodsConfig = { when: true }) {
+  return function (target: InstanceType<any>): InstanceType<any> {
     const level = config.level ?? 'debug'
     if (config.when) {
       for (const propertyName of Object.getOwnPropertyNames(target.prototype)) {
@@ -33,7 +33,7 @@ export function LogMethods(config: LogMethodsConfig = {when: true}) {
         const descriptor = getMethodDescriptor(propertyName)
         const originalMethod = descriptor.value
         descriptor.value = function (...args: any[]) {
-          // tslint:disable-next-line: no-console
+          // eslint:disable-next-line: no-console
           console[level](
             `%c[${target.name}::${propertyName}]`,
             'color: goldenrod',
@@ -50,7 +50,7 @@ export function LogMethods(config: LogMethodsConfig = {when: true}) {
     function getMethodDescriptor(
       propertyName: string,
     ): TypedPropertyDescriptor<any> {
-      if (target.prototype.hasOwnProperty(propertyName)) {
+      if (Object.prototype.hasOwnProperty.call(target, propertyName)) {
         return Object.getOwnPropertyDescriptor(target.prototype, propertyName)
       }
 

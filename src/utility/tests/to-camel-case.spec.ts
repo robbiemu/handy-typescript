@@ -1,4 +1,4 @@
-import {toCamelCase} from '../to-camel-case'
+import { toCamelCase } from '../to-camel-case'
 
 describe('toCamelCase', () => {
   it('should convert space-separated strings to camel case (and not class case)', () => {

@@ -1,4 +1,4 @@
-import {Mixin} from '../../decorators/mixin.decorator'
+import { Mixin } from '../../decorators/mixin.decorator'
 
 describe('Mixin', () => {
   it('should add behaviors to a class', () => {
@@ -8,7 +8,7 @@ describe('Mixin', () => {
       }
     }
 
-    type Specimen = Behavior
+    interface Specimen extends Behavior {}
 
     @Mixin(Behavior)
     class Specimen {}

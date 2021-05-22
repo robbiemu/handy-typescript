@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+
 /**
  * stringify possibly circular references
  * @param item value to stringify cleanly
  * @returns json-like string without circular references
  */
-export function cleanStringify(item: any) {
+export function cleanStringify(item: any): string {
   if (item && typeof item === 'object') {
     item = copyWithoutCircularReferences([item], item)
   }
@@ -16,7 +18,10 @@ export function cleanStringify(item: any) {
  * @param object the object copied
  * @returns copy of an object without circular references
  */
-export function copyWithoutCircularReferences(references: any, object: any) {
+export function copyWithoutCircularReferences(
+  references: any[],
+  object: any,
+): Object {
   const cleanObject = {}
   Object.keys(object).forEach(function (key) {
     const value = object[key]

@@ -1,8 +1,13 @@
-import {factoryHasProperty} from '../factory-has-property'
+import { factoryHasProperty } from '../factory-has-property'
 
 describe('factoryHasProperty', () => {
   it('should detect properties regardlass of value', () => {
-    const cases = [{b: true}, {a: true, b: false}, {a: true, b: undefined}, {}]
+    const cases = [
+      { b: true },
+      { a: true, b: false },
+      { a: true, b: undefined },
+      {},
+    ]
 
     const hasPropB = factoryHasProperty('b')
 

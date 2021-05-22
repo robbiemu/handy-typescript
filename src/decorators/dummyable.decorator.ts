@@ -5,10 +5,10 @@
 export function Dummyable(conf: DummyableConfig) {
   // tslint:disable-next-line: only-arrow-functions
   return function (
-    _targetClass: any,
+    _targetClass: Constructor,
     propertyKey: string | symbol,
     descriptor: PropertyDescriptor,
-  ) {
+  ): PropertyDescriptor {
     const originalMethod = descriptor.value
 
     const config = factoryDummyableConfig(conf)
@@ -35,10 +35,10 @@ export function Dummyable(conf: DummyableConfig) {
 export function factoryDummyableConfig(
   conf: Partial<DummyableConfig>,
 ): DummyableConfig {
-  if (!conf.hasOwnProperty('override')) {
+  if (!Object.prototype.hasOwnProperty.call(conf, 'override')) {
     conf.override = true
   }
-  if (!conf.hasOwnProperty('factoryResponse')) {
+  if (!Object.prototype.hasOwnProperty.call(conf, 'factoryResponse')) {
     conf.factoryResponse = () => ({})
   }
 
@@ -61,4 +61,4 @@ export interface DummyableConfig {
   factoryResponse: DummyableFactoryResponse
 }
 
-export type DummyableFactoryResponse = Function & {originalMethod?: Function}
+export type DummyableFactoryResponse = Function & { originalMethod?: Function }

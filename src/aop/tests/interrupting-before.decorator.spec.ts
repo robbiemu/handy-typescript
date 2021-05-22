@@ -1,4 +1,4 @@
-import {InterruptingBefore} from '../interrupting-before.decorator'
+import { InterruptingBefore } from '../interrupting-before.decorator'
 
 describe('InterruptingBefore', () => {
   it('should execute before the method', () => {
@@ -7,6 +7,7 @@ describe('InterruptingBefore', () => {
       @InterruptingBefore(function () {
         this.value = true
       })
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
       method() {}
     }
 
@@ -38,7 +39,7 @@ describe('InterruptingBefore', () => {
       value: boolean
       @InterruptingBefore(function () {
         this.value = true
-        return {flag: true}
+        return { flag: true }
       })
       method() {
         this.value = false
@@ -56,7 +57,7 @@ describe('InterruptingBefore', () => {
       value: boolean
       @InterruptingBefore(function () {
         this.value = true
-        return {flag: false}
+        return { flag: false }
       })
       method() {
         this.value = false
@@ -71,13 +72,13 @@ describe('InterruptingBefore', () => {
 
   it('should accept an aopdecoratorpayload response, preventing origianl method', () => {
     const console = global.console
-    global.console = {info: jest.fn()} as any
+    global.console = { info: jest.fn() } as any
 
     class LogInterrupts {
       value: boolean
       @InterruptingBefore(function () {
         this.value = true
-        return {flag: false}
+        return { flag: false }
       })
       method() {
         this.value = false
@@ -99,7 +100,7 @@ describe('InterruptingBefore', () => {
       value: boolean
       @InterruptingBefore(function (value: boolean) {
         this.value = value
-        return {flag: true, payload: false}
+        return { flag: true, payload: false }
       })
       method(value: boolean) {
         this.value = value

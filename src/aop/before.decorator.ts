@@ -3,13 +3,12 @@
  * @param beforeFunction method to decorate
  */
 export function Before(beforeFunction: Function) {
-  // tslint:disable-next-line: only-arrow-functions
   return function (
-    _targetClass: any,
+    _targetClass: Constructor,
     _propertyKey: string | symbol,
     descriptor: PropertyDescriptor,
-  ) {
-    const originalMethod = descriptor.value;
+  ): PropertyDescriptor {
+    const originalMethod = descriptor.value
 
     descriptor.value = function (...args: any[]) {
       function res() {

@@ -1,4 +1,4 @@
-import {After} from '../after.decorator'
+import { After } from '../after.decorator'
 
 describe('AfterDecorator', () => {
   it('should modify a method to execute a function after the method', () => {

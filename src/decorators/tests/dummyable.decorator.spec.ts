@@ -1,12 +1,14 @@
-import {DummyableFactoryResponse} from '../../decorators/dummyable.decorator'
-import {Dummyable} from '../../decorators/dummyable.decorator'
+/* eslint-disable @typescript-eslint/no-empty-function */
+
+import { DummyableFactoryResponse } from '../dummyable.decorator'
+import { Dummyable } from '../dummyable.decorator'
 
 describe('Dummyable', () => {
   it('should replace a method', () => {
     let methodCalled: boolean
 
     class Replace {
-      @Dummyable({factoryResponse() {}})
+      @Dummyable({ factoryResponse() {} })
       method() {
         methodCalled = true
       }
@@ -23,7 +25,7 @@ describe('Dummyable', () => {
     const compileTimeCondition = true
 
     class ConditionalReplace {
-      @Dummyable({override: compileTimeCondition, factoryResponse() {}})
+      @Dummyable({ override: compileTimeCondition, factoryResponse() {} })
       method() {
         methodCalled = true
       }
@@ -40,10 +42,10 @@ describe('Dummyable', () => {
 
     const console = global.console
 
-    global.console = {info: jest.fn()} as any
+    global.console = { info: jest.fn() } as any
 
     class Log {
-      @Dummyable({override: compileTimeCondition, factoryResponse() {}})
+      @Dummyable({ override: compileTimeCondition, factoryResponse() {} })
       method() {}
     }
 
@@ -63,7 +65,7 @@ describe('Dummyable', () => {
     const compileTimeCondition = false
 
     class ConditionalNotReplace {
-      @Dummyable({override: compileTimeCondition, factoryResponse() {}})
+      @Dummyable({ override: compileTimeCondition, factoryResponse() {} })
       method() {
         methodCalled = true
       }
@@ -109,7 +111,7 @@ describe('Dummyable', () => {
         return this._contextual
       }
 
-      @Dummyable({factoryResponse})
+      @Dummyable({ factoryResponse })
       method() {
         this._contextual = false
       }

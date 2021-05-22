@@ -1,5 +1,5 @@
-import {Watcher} from './watcher.mock'
-import {Before} from '../before.decorator'
+import { Watcher } from './watcher.mock'
+import { Before } from '../before.decorator'
 
 describe('BeforeDecorator', () => {
   const watcher = new Watcher()

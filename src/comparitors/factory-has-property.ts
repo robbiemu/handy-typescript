@@ -10,7 +10,8 @@
  * @returns comparator
  */
 export function factoryHasProperty(property: string) {
-  return function (value: {[prop: string]: any}) {
+  return function (value: { [prop: string]: any }): boolean {
+    // eslint-disable-next-line no-prototype-builtins
     return value?.hasOwnProperty?.(property)
   }
 }

@@ -1,4 +1,4 @@
-import {isNullOrUndefined} from '../is-null-or-undefined'
+import { isNullOrUndefined } from '../is-null-or-undefined'
 
 describe('isNullOrUndefined', () => {
   it('should detect indefinite values (undefined and null)', () => {

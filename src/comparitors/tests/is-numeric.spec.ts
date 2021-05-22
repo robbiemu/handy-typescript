@@ -1,4 +1,4 @@
-import {isNumeric} from '../is-numeric'
+import { isNumeric } from '../is-numeric'
 
 describe('isNumeric', () => {
   it('should select numeric values', () => {

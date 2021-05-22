@@ -3,12 +3,11 @@
  * @param afterFunction method to decorate
  */
 export function After(afterFunction: Function) {
-  // tslint:disable-next-line: only-arrow-functions
   return function (
-    _targetClass: Object,
+    _targetClass: Constructor,
     _propertyKey: string | symbol,
     descriptor: PropertyDescriptor,
-  ) {
+  ): PropertyDescriptor {
     const originalMethod = descriptor.value
 
     descriptor.value = function (...args: any[]) {

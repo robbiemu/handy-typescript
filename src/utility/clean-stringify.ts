@@ -1,13 +1,13 @@
 /**
- * stringify possibly circular references 
+ * stringify possibly circular references
  * @param item value to stringify cleanly
  * @returns json-like string without circular references
  */
 export function cleanStringify(item: any) {
   if (item && typeof item === 'object') {
-    item = copyWithoutCircularReferences([item], item);
+    item = copyWithoutCircularReferences([item], item)
   }
-  return JSON.stringify(item);
+  return JSON.stringify(item)
 }
 
 /**
@@ -17,22 +17,22 @@ export function cleanStringify(item: any) {
  * @returns copy of an object without circular references
  */
 export function copyWithoutCircularReferences(references: any, object: any) {
-  const cleanObject = {};
+  const cleanObject = {}
   Object.keys(object).forEach(function (key) {
-    const value = object[key];
+    const value = object[key]
     if (value && typeof value === 'object') {
       if (references.indexOf(value) < 0) {
-        references.push(value);
-        cleanObject[key] = copyWithoutCircularReferences(references, value);
-        references.pop();
+        references.push(value)
+        cleanObject[key] = copyWithoutCircularReferences(references, value)
+        references.pop()
       } else {
-        cleanObject[key] = '###_Circular_###';
+        cleanObject[key] = '###_Circular_###'
       }
     } else if (typeof value === 'function') {
-      cleanObject[key] = '###_Function:' + value.name + '_###';
+      cleanObject[key] = '###_Function:' + value.name + '_###'
     } else {
-      cleanObject[key] = value;
+      cleanObject[key] = value
     }
-  });
-  return cleanObject;
+  })
+  return cleanObject
 }

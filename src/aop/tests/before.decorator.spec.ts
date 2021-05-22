@@ -1,8 +1,8 @@
-import { Watcher } from './watcher.mock'
-import { Before } from "../before.decorator"
+import {Watcher} from './watcher.mock'
+import {Before} from '../before.decorator'
 
 describe('BeforeDecorator', () => {
-  let watcher = new Watcher()
+  const watcher = new Watcher()
 
   afterEach(() => {
     jest.clearAllMocks()
@@ -11,7 +11,7 @@ describe('BeforeDecorator', () => {
   it('should modify a method to execute a function before the method', () => {
     jest.spyOn(watcher, 'observe')
 
-    let sentinel: boolean;
+    let sentinel: boolean
 
     function testFunction() {
       watcher.observe(true)
@@ -26,24 +26,24 @@ describe('BeforeDecorator', () => {
     }
 
     const f = new FooBar()
-    f.bang();
+    f.bang()
     expect(sentinel).toBeFalsy()
     expect(watcher.observe).toHaveBeenCalledWith(true)
   })
 
   it('should have access to the parameters', () => {
     let returnValue: boolean
-    let originalMethodValue: boolean;
+    let originalMethodValue: boolean
 
     class AccessParameters {
-      @Before((value: boolean) => returnValue = value)
+      @Before((value: boolean) => (returnValue = value))
       bang(value: boolean) {
         originalMethodValue = value
       }
     }
 
     const f = new AccessParameters()
-    f.bang(true);
+    f.bang(true)
     expect(returnValue).toBeTruthy()
     expect(originalMethodValue).toBeTruthy()
   })

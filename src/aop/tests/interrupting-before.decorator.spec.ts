@@ -1,4 +1,4 @@
-import { InterruptingBefore } from "../interrupting-before.decorator"
+import {InterruptingBefore} from '../interrupting-before.decorator'
 
 describe('InterruptingBefore', () => {
   it('should execute before the method', () => {
@@ -7,7 +7,7 @@ describe('InterruptingBefore', () => {
       @InterruptingBefore(function () {
         this.value = true
       })
-      method() { }
+      method() {}
     }
 
     const ib = new Before()
@@ -22,7 +22,9 @@ describe('InterruptingBefore', () => {
       @InterruptingBefore(function () {
         this.value = true
       })
-      method() { this.value = false }
+      method() {
+        this.value = false
+      }
     }
 
     const ib = new Interrupt()
@@ -36,9 +38,11 @@ describe('InterruptingBefore', () => {
       value: boolean
       @InterruptingBefore(function () {
         this.value = true
-        return { flag: true }
+        return {flag: true}
       })
-      method() { this.value = false }
+      method() {
+        this.value = false
+      }
     }
 
     const ib = new PayloadRes()
@@ -52,9 +56,11 @@ describe('InterruptingBefore', () => {
       value: boolean
       @InterruptingBefore(function () {
         this.value = true
-        return { flag: false }
+        return {flag: false}
       })
-      method() { this.value = false }
+      method() {
+        this.value = false
+      }
     }
 
     const ib = new InterruptPayloadRes()
@@ -65,21 +71,25 @@ describe('InterruptingBefore', () => {
 
   it('should accept an aopdecoratorpayload response, preventing origianl method', () => {
     const console = global.console
-    global.console = { info: jest.fn() } as any
+    global.console = {info: jest.fn()} as any
 
     class LogInterrupts {
       value: boolean
       @InterruptingBefore(function () {
         this.value = true
-        return { flag: false }
+        return {flag: false}
       })
-      method() { this.value = false }
+      method() {
+        this.value = false
+      }
     }
 
     const ib = new LogInterrupts()
     ib.method()
 
-    expect(global.console.info).toHaveBeenCalledWith('[InterruptingBefore@LogInterrupts::method] interupting execution')
+    expect(global.console.info).toHaveBeenCalledWith(
+      '[InterruptingBefore@LogInterrupts::method] interupting execution',
+    )
 
     global.console = console
   })
@@ -89,9 +99,11 @@ describe('InterruptingBefore', () => {
       value: boolean
       @InterruptingBefore(function (value: boolean) {
         this.value = value
-        return { flag: true, payload: false }
+        return {flag: true, payload: false}
       })
-      method(value: boolean) { this.value = value }
+      method(value: boolean) {
+        this.value = value
+      }
     }
 
     const ib = new OverridePayloadRes()

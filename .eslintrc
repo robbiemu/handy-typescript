@@ -2,33 +2,43 @@
   "parser": "@typescript-eslint/parser",
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended", 
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "prettier/@typescript-eslint"
+    "prettier"
   ],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
   "rules": {
-    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/indent": [
+      "error",
+      2
+    ],
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/explicit-member-accessibility": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/no-parameter-properties": 0,
     "@typescript-eslint/interface-name-prefix": 0,
-    "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/ban-types": "off"
-  },
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx"],
-      "rules": {
-        "@typescript-eslint/explicit-module-boundary-types": ["error"],
-        "semi": ["error", "never", { "beforeStatementContinuationChars": "always"}] 
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/semi": [
+      "error",
+      "never",
+      {
+        "beforeStatementContinuationChars": "always"
       }
-    }
-  ],
-  "ignorePatterns": ["**/*.json", "**/*.mock.*", "**/vendor/*.js"]
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": [
+      "error",
+      {
+        "allowHigherOrderFunctions": true
+      }
+    ]
+  },
+  "ignorePatterns": [
+    "**/*.json",
+    "**/*.mock.*",
+    "**/vendor/*.js"
+  ]
 }

@@ -1,4 +1,4 @@
-import type { AopDecoratorPayload } from './aop-decorator-payload.interface'
+import type {AopDecoratorPayload} from './aop-decorator-payload.interface'
 
 /**
  * decorator that executes arbitrary code before the underlying method. the function executed can
@@ -7,7 +7,11 @@ import type { AopDecoratorPayload } from './aop-decorator-payload.interface'
  * @param before method to optionally interrup t and execute before the method
  */
 export function InterruptingBefore(before: Function) {
-  return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+  return function (
+    target: any,
+    propertyKey: string,
+    descriptor: PropertyDescriptor,
+  ) {
     const originalMethod = descriptor.value
 
     descriptor.value = function (...args: any) {
@@ -15,13 +19,17 @@ export function InterruptingBefore(before: Function) {
       if (result) {
         if (result.flag) {
           if (result.hasOwnProperty('payload')) {
-            const payload = Array.isArray(result.payload) ? result.payload : [result.payload]
+            const payload = Array.isArray(result.payload)
+              ? result.payload
+              : [result.payload]
             return originalMethod.bind(this)(...payload)
           } else {
             return originalMethod.bind(this)(...args)
           }
         } else {
-          console.info(`[InterruptingBefore@${target.constructor.name}::${propertyKey}] interupting execution`)
+          console.info(
+            `[InterruptingBefore@${target.constructor.name}::${propertyKey}] interupting execution`,
+          )
           return result?.payload
         }
       }

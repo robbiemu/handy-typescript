@@ -1,13 +1,15 @@
-import { DummyableFactoryResponse } from '../../decorators/dummyable.decorator';
-import { Dummyable } from "../../decorators/dummyable.decorator";
+import {DummyableFactoryResponse} from '../../decorators/dummyable.decorator'
+import {Dummyable} from '../../decorators/dummyable.decorator'
 
 describe('Dummyable', () => {
   it('should replace a method', () => {
     let methodCalled: boolean
 
     class Replace {
-      @Dummyable({ factoryResponse() { } })
-      method() { methodCalled = true }
+      @Dummyable({factoryResponse() {}})
+      method() {
+        methodCalled = true
+      }
     }
 
     const r = new Replace()
@@ -21,8 +23,10 @@ describe('Dummyable', () => {
     const compileTimeCondition = true
 
     class ConditionalReplace {
-      @Dummyable({ override: compileTimeCondition, factoryResponse() { } })
-      method() { methodCalled = true }
+      @Dummyable({override: compileTimeCondition, factoryResponse() {}})
+      method() {
+        methodCalled = true
+      }
     }
 
     const r = new ConditionalReplace()
@@ -36,17 +40,20 @@ describe('Dummyable', () => {
 
     const console = global.console
 
-    global.console = { info: jest.fn() } as any
+    global.console = {info: jest.fn()} as any
 
     class Log {
-      @Dummyable({ override: compileTimeCondition, factoryResponse() { } })
-      method() { }
+      @Dummyable({override: compileTimeCondition, factoryResponse() {}})
+      method() {}
     }
 
     const r = new Log()
     r.method()
 
-    expect(global.console.info).toHaveBeenCalledWith("%c [Dummyable] at method", "color: goldenrod")
+    expect(global.console.info).toHaveBeenCalledWith(
+      '%c [Dummyable] at method',
+      'color: goldenrod',
+    )
 
     global.console = console
   })
@@ -56,8 +63,10 @@ describe('Dummyable', () => {
     const compileTimeCondition = false
 
     class ConditionalNotReplace {
-      @Dummyable({ override: compileTimeCondition, factoryResponse() { } })
-      method() { methodCalled = true }
+      @Dummyable({override: compileTimeCondition, factoryResponse() {}})
+      method() {
+        methodCalled = true
+      }
     }
 
     const r = new ConditionalNotReplace()
@@ -71,8 +80,12 @@ describe('Dummyable', () => {
 
     class Context {
       readonly contextual = true
-      @Dummyable({ factoryResponse() { received = this.contextual } })
-      method() { }
+      @Dummyable({
+        factoryResponse() {
+          received = this.contextual
+        },
+      })
+      method() {}
     }
 
     const r = new Context()
@@ -96,11 +109,10 @@ describe('Dummyable', () => {
         return this._contextual
       }
 
-      @Dummyable({ factoryResponse })
+      @Dummyable({factoryResponse})
       method() {
         this._contextual = false
       }
-
     }
 
     const r = new CrossCut()

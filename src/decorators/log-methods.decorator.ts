@@ -16,36 +16,42 @@ export interface LogMethodsConfig {
  * decorator to log method calls and the paramters passed
  * @param config logging configuration
  */
-export function LogMethods(config: LogMethodsConfig = { when: true }) {
-  return (target) => {
+export function LogMethods(config: LogMethodsConfig = {when: true}) {
+  return target => {
     const level = config.level ?? 'debug'
     if (config.when) {
-      for (const propertyName of Object.getOwnPropertyNames(target.prototype)
-      ) {
-        if ( // ensure the property is not a computed value
-          (Object.getOwnPropertyDescriptor(target.prototype, propertyName)
-            && Object.getOwnPropertyDescriptor(target.prototype, propertyName).get)
-          || !(target.prototype[propertyName] instanceof Function)
+      for (const propertyName of Object.getOwnPropertyNames(target.prototype)) {
+        if (
+          // ensure the property is not a computed value
+          (Object.getOwnPropertyDescriptor(target.prototype, propertyName) &&
+            Object.getOwnPropertyDescriptor(target.prototype, propertyName).get) ||
+          !(target.prototype[propertyName] instanceof Function)
         ) {
-          continue;
+          continue
         }
 
-        const descriptor = getMethodDescriptor(propertyName);
-        const originalMethod = descriptor.value;
+        const descriptor = getMethodDescriptor(propertyName)
+        const originalMethod = descriptor.value
         descriptor.value = function (...args: any[]) {
           // tslint:disable-next-line: no-console
-          console[level](`%c[${target.name}::${propertyName}]`, 'color: goldenrod', ...args);
-          return originalMethod.apply(this, args);
-        };
+          console[level](
+            `%c[${target.name}::${propertyName}]`,
+            'color: goldenrod',
+            ...args,
+          )
+          return originalMethod.apply(this, args)
+        }
 
-        Object.defineProperty(target.prototype, propertyName, descriptor);
+        Object.defineProperty(target.prototype, propertyName, descriptor)
       }
     }
-    return target;
+    return target
 
-    function getMethodDescriptor(propertyName: string): TypedPropertyDescriptor<any> {
+    function getMethodDescriptor(
+      propertyName: string,
+    ): TypedPropertyDescriptor<any> {
       if (target.prototype.hasOwnProperty(propertyName)) {
-        return Object.getOwnPropertyDescriptor(target.prototype, propertyName);
+        return Object.getOwnPropertyDescriptor(target.prototype, propertyName)
       }
 
       // create a new property descriptor for the base class' method
@@ -53,8 +59,8 @@ export function LogMethods(config: LogMethodsConfig = { when: true }) {
         configurable: true,
         enumerable: true,
         writable: true,
-        value: target.prototype[propertyName]
-      };
+        value: target.prototype[propertyName],
+      }
     }
-  };
+  }
 }

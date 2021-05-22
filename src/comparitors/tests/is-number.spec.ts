@@ -1,4 +1,4 @@
-import { isNumber } from '../is-number';
+import {isNumber} from '../is-number'
 
 describe('isNumber', () => {
   it('should select numeric values', () => {
@@ -14,7 +14,7 @@ describe('isNumber', () => {
       [],
       {},
       [0],
-      null
+      null,
     ]
 
     expect(cases.filter(isNumber)).toHaveLength(5)

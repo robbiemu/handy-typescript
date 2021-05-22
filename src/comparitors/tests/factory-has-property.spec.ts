@@ -1,13 +1,8 @@
-import { factoryHasProperty } from "../factory-has-property"
+import {factoryHasProperty} from '../factory-has-property'
 
 describe('factoryHasProperty', () => {
   it('should detect properties regardlass of value', () => {
-    const cases = [
-      { b: true },
-      { a: true, b: false },
-      { a: true, b: undefined },
-      {}
-    ]
+    const cases = [{b: true}, {a: true, b: false}, {a: true, b: undefined}, {}]
 
     const hasPropB = factoryHasProperty('b')
 
@@ -17,13 +12,7 @@ describe('factoryHasProperty', () => {
   })
 
   it('should gracefully handle non-object entities', () => {
-    const cases: Array<unknown> = [
-      undefined,
-      NaN,
-      1,
-      't',
-      0xbb
-    ]
+    const cases: Array<unknown> = [undefined, NaN, 1, 't', 0xbb]
 
     const hasPropB = factoryHasProperty('b')
 

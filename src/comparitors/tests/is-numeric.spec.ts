@@ -1,4 +1,4 @@
-import { isNumeric } from '../is-numeric';
+import {isNumeric} from '../is-numeric'
 
 describe('isNumeric', () => {
   it('should select numeric values', () => {
@@ -14,7 +14,7 @@ describe('isNumeric', () => {
       [],
       {},
       [0],
-      null
+      null,
     ]
 
     expect(cases.filter(isNumeric)).toHaveLength(6)

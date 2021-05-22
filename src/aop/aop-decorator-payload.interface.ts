@@ -1,4 +1,4 @@
 export interface AopDecoratorPayload {
-  flag: boolean;
-  payload: any;
+  flag: boolean
+  payload: any
 }

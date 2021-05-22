@@ -5,14 +5,14 @@
  *   abstract class Behavior {
  *     method() {}
  *   }
- * 
+ *
  *   interface Specimen extends Behavior {}
- * 
+ *
  *   @Mixin(Behavior)
  *   class Specimen {}
- * 
+ *
  *   //..
- * 
+ *
  *   const specimen = new Specimen()
  *   specimen.method()
  * ```
@@ -20,12 +20,12 @@
  */
 export function Mixin(...classes: Function[]): ClassDecorator {
   return function (target) {
-    classes.forEach((constructor) => {
-      Object.getOwnPropertyNames(constructor.prototype).forEach((name) => {
+    classes.forEach(constructor => {
+      Object.getOwnPropertyNames(constructor.prototype).forEach(name => {
         Object.defineProperty(
           target.prototype,
           name,
-          Object.getOwnPropertyDescriptor(constructor.prototype, name) as any
+          Object.getOwnPropertyDescriptor(constructor.prototype, name) as any,
         )
       })
     })

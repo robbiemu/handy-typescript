@@ -10,7 +10,7 @@
  * @returns comparator
  */
 export function factoryHasProperty(property: string) {
-  return function (value: { [prop: string]: any }) {
+  return function (value: {[prop: string]: any}) {
     return value?.hasOwnProperty?.(property)
   }
 }

@@ -1,4 +1,4 @@
-import { isNullOrUndefined } from "../is-null-or-undefined"
+import {isNullOrUndefined} from '../is-null-or-undefined'
 
 describe('isNullOrUndefined', () => {
   it('should detect indefinite values (undefined and null)', () => {
@@ -11,7 +11,7 @@ describe('isNullOrUndefined', () => {
       1,
       'dummy-data',
       0xbb,
-      null
+      null,
     ]
 
     expect(cases.every(isNullOrUndefined)).toBeFalsy()

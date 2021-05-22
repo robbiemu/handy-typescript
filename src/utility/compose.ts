@@ -5,6 +5,6 @@
  */
 export function compose(...fns) {
   return function () {
-    fns.forEach(fn => fn.bind(this)());
-  };
+    fns.forEach(fn => fn.bind(this)())
+  }
 }

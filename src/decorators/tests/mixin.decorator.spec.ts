@@ -1,15 +1,17 @@
-import { Mixin } from "../../decorators/mixin.decorator"
+import {Mixin} from '../../decorators/mixin.decorator'
 
 describe('Mixin', () => {
   it('should add behaviors to a class', () => {
     abstract class Behavior {
-      echo(value: boolean) { return value }
+      echo(value: boolean) {
+        return value
+      }
     }
 
-    interface Specimen extends Behavior { }
+    type Specimen = Behavior
 
     @Mixin(Behavior)
-    class Specimen { }
+    class Specimen {}
 
     const s = new Specimen()
     expect(s.echo(true)).toBeTruthy()

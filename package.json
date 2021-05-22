@@ -4,7 +4,6 @@
   "description": "a collection of tools I use in typescript",
   "main": "dist/index.js",
   "scripts": {
-    "pre-commit": "echo npm-run-all -s doc lint-staged",
     "pretest": "jest --clearCache",
     "test": "jest",
     "predoc": "echo 'preparing documentation' && npm link typedoc",
@@ -13,6 +12,9 @@
     "prelint-staged": "echo 'preparing documentation' && npm link lint-staged",
     "lint-staged": "lint-staged"
   },
+  "pre-commit": [
+    "echo npm-run-all -s doc lint-staged"
+  ],
   "keywords": [
     "typescript"
   ],

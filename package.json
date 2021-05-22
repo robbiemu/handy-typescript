@@ -6,8 +6,9 @@
   "scripts": {
     "pretest": "jest --clearCache",
     "test": "jest",
-    "predoc": "npm link typedoc",
+    "predoc": "npm link typedoc && echo himom",
     "doc": "typedoc",
+    "postdoc": "git add -A docs",
     "prelint-staged": "npm link lint-staged",
     "lint-staged": "lint-staged"
   },

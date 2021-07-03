@@ -24,4 +24,4 @@ simple static implementation type checking for typescript
 
 **Returns:** Function
 
-Defined in: [src/utility/static-implements.ts:4](https://github.com/robbiemu/handy-typescript/blob/59044bb/src/utility/static-implements.ts#L4)
+Defined in: [src/utility/static-implements.ts:4](https://github.com/robbiemu/handy-typescript/blob/60b7785/src/utility/static-implements.ts#L4)

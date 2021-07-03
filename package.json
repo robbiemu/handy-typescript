@@ -40,5 +40,8 @@
   },
   "lint-staged": {
     "*.ts": "eslint --fix"
+  },
+  "dependencies": {
+    "priorityqueue": "^1.0.0"
   }
 }

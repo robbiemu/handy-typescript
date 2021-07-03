@@ -4,6 +4,14 @@
 
 ## Table of contents
 
+### Classes
+
+- [MixinTarget](../classes/src_decorators_mixin_decorator.mixintarget.md)
+
+### Interfaces
+
+- [Mixin](../interfaces/src_decorators_mixin_decorator.mixin.md)
+
 ### Functions
 
 - [Mixin](src_decorators_mixin_decorator.md#mixin)
@@ -14,30 +22,12 @@
 
 ▸ **Mixin**(...`classes`: Function[]): ClassDecorator
 
-decorator to mixin behaviors
-example:
-```typescript
-  abstract class Behavior {
-    method() {}
-  }
-
-  interface Specimen extends Behavior {}
-
-  @Mixin(Behavior)
-  class Specimen {}
-
-  //..
-
-  const specimen = new Specimen()
-  specimen.method()
-```
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `...classes` | Function[] | classes to mix in to the decorated class |
+| Name | Type |
+| :------ | :------ |
+| `...classes` | Function[] |
 
 **Returns:** ClassDecorator
 
-Defined in: [src/decorators/mixin.decorator.ts:21](https://github.com/robbiemu/handy-typescript/blob/59044bb/src/decorators/mixin.decorator.ts#L21)
+Defined in: [src/decorators/mixin.decorator.ts:25](https://github.com/robbiemu/handy-typescript/blob/60b7785/src/decorators/mixin.decorator.ts#L25)

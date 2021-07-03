@@ -20,4 +20,4 @@
 
 Constructor - a Class
 
-Defined in: [types/constructor.d.ts:4](https://github.com/robbiemu/handy-typescript/blob/59044bb/types/constructor.d.ts#L4)
+Defined in: [types/constructor.d.ts:4](https://github.com/robbiemu/handy-typescript/blob/60b7785/types/constructor.d.ts#L4)

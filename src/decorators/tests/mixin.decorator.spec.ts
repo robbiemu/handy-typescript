@@ -1,4 +1,4 @@
-import { Mixin, MixinTarget } from '../../decorators/mixin.decorator'
+import { Mixin } from '../mixin.decorator'
 
 describe('Mixin', () => {
   it('should add behaviors to a class', () => {
@@ -28,6 +28,8 @@ describe('Mixin', () => {
     }
 
     class Property {
+      baz? = true // demonstrating that baz will not be set.
+
       static postConstructor(this: Property) {
         this.bar = true
       }
@@ -39,13 +41,12 @@ describe('Mixin', () => {
     interface Specimen extends Property {}
 
     @Mixin(Property)
-    class Specimen extends MixinTarget {
-      constructor() {
-        super()
-      }
-    }
+    class Specimen {}
 
     const s = new Specimen()
+
+    expect(s.baz).toBeUndefined()
+    expect(s.constructor).not.toHaveProperty('postConstructor')
     expect(s.myProperty).toEqual('dummy-data')
     expect(s).toHaveProperty('bar')
   })

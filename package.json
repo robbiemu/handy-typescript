@@ -42,6 +42,8 @@
     "*.ts": "eslint --fix"
   },
   "dependencies": {
-    "priorityqueue": "^1.0.0"
+    "md5": "^2.3.0",
+    "priorityqueue": "^1.0.0",
+    "rxjs": "^6.6.7"
   }
 }

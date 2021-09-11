@@ -1,6 +1,7 @@
 /**
  * decorator execute code _after_ method completes
  * @param afterFunction method to decorate
+ * TODO - add support for accessors
  */
 export function After(afterFunction: Function) {
   return function (

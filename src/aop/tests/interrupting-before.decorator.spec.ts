@@ -4,6 +4,7 @@ describe('InterruptingBefore', () => {
   it('should execute before the method', () => {
     class Before {
       value: boolean
+
       @InterruptingBefore(function () {
         this.value = true
       })
@@ -34,7 +35,7 @@ describe('InterruptingBefore', () => {
     expect(ib.value).toBeTruthy()
   })
 
-  it('should accept an aopdecoratorpayload response, triggering origianl method', () => {
+  it('should accept an aopdecoratorpayload response, triggering original method', () => {
     class PayloadRes {
       value: boolean
       @InterruptingBefore(function () {

@@ -18,7 +18,7 @@ export function andable(...keys: string[]): AndableFunction {
   }
   fn.after = function () {
     const address = md5(this)
-    this.originaMethod(
+    this.originalMethod(
       ...AndableUniverse.andables[address].concat(
         Object.values(AndableUniverse.afters[address]),
       ),

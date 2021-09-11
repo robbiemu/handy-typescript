@@ -5,6 +5,7 @@ import type { AopDecoratorPayload } from './aop-decorator-payload.interface'
  * optionally trigger the original method after, or interrupt its execution. it may opt to replace
  * the parameters with an {@link AopDecoratorPayload}
  * @param before method to optionally interrup t and execute before the method
+ * TODO - add support for accessors
  */
 export function InterruptingBefore(before: Function) {
   return function (

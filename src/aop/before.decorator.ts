@@ -1,6 +1,7 @@
 /**
  * decorator to execute code before method execution
  * @param beforeFunction method to decorate
+ * TODO - add support for accessors
  */
 export function Before(beforeFunction: Function) {
   return function (

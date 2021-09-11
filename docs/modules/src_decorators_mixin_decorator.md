@@ -4,10 +4,6 @@
 
 ## Table of contents
 
-### Classes
-
-- [MixinTarget](../classes/src_decorators_mixin_decorator.mixintarget.md)
-
 ### Interfaces
 
 - [Mixin](../interfaces/src_decorators_mixin_decorator.mixin.md)
@@ -30,4 +26,4 @@
 
 **Returns:** ClassDecorator
 
-Defined in: [src/decorators/mixin.decorator.ts:25](https://github.com/robbiemu/handy-typescript/blob/60b7785/src/decorators/mixin.decorator.ts#L25)
+Defined in: [src/decorators/mixin.decorator.ts:25](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/decorators/mixin.decorator.ts#L25)

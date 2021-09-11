@@ -24,4 +24,4 @@ decorator to execute code before method execution
 
 **Returns:** (`_targetClass`: *Partial*<(...`args`: *any*[]) => *any*\>, `_propertyKey`: *string* \| *symbol*, `descriptor`: PropertyDescriptor) => PropertyDescriptor
 
-Defined in: [src/aop/before.decorator.ts:5](https://github.com/robbiemu/handy-typescript/blob/60b7785/src/aop/before.decorator.ts#L5)
+Defined in: [src/aop/before.decorator.ts:5](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/aop/before.decorator.ts#L5)

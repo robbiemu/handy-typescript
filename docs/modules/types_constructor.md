@@ -11,6 +11,7 @@
 ### Type aliases
 
 - [Constructor](types_constructor.md#constructor)
+- [StrictConstructor](types_constructor.md#strictconstructor)
 
 ## Type aliases
 
@@ -20,4 +21,14 @@
 
 Constructor - a Class
 
-Defined in: [types/constructor.d.ts:4](https://github.com/robbiemu/handy-typescript/blob/60b7785/types/constructor.d.ts#L4)
+Defined in: [types/constructor.d.ts:4](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/types/constructor.d.ts#L4)
+
+___
+
+### StrictConstructor
+
+Ƭ **StrictConstructor**: *object*
+
+#### Type declaration
+
+Defined in: [types/constructor.d.ts:5](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/types/constructor.d.ts#L5)

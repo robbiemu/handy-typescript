@@ -28,4 +28,4 @@ decorator to log method calls and the paramters passed
 
 **Returns:** (`target`: *any*) => *any*
 
-Defined in: [src/decorators/log-methods.decorator.ts:19](https://github.com/robbiemu/handy-typescript/blob/60b7785/src/decorators/log-methods.decorator.ts#L19)
+Defined in: [src/decorators/log-methods.decorator.ts:19](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/decorators/log-methods.decorator.ts#L19)

@@ -26,4 +26,4 @@ compose an ordered list of execution
 
 a function taht will call each fn in turn
 
-Defined in: [src/utility/compose.ts:6](https://github.com/robbiemu/handy-typescript/blob/60b7785/src/utility/compose.ts#L6)
+Defined in: [src/utility/compose.ts:6](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/compose.ts#L6)

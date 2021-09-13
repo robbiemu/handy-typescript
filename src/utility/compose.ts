@@ -1,5 +1,6 @@
 /**
- * compose an ordered list of execution
+ * @function compose
+ * @description compose an ordered list of execution from current context
  * @param fns functions to execute
  * @returns a function taht will call each fn in turn
  */

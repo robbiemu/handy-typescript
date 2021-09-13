@@ -1,7 +1,7 @@
 import { InterruptingBefore } from '@src/aop/interrupting-before.decorator'
 import { Before } from '@src/aop/before.decorator'
 import { andable, Andable } from './andable'
-import { Entry } from './Entry'
+import { Entry } from './entry'
 import { add, count } from './math-lambdas'
 import { randomInt } from './random-int'
 import { assert } from './assert'
@@ -42,8 +42,7 @@ export class List<T> extends Array {
 
   /**
    * @method aperture
-   * @description Returns a new list, composed of n-tuples of consecutive elements.
-   * Note: inspired by, and perhaps copied from Ramda
+   * @description Returns a new list, composed of n-tuples of consecutive elements. Note: inspired by, and perhaps copied from Ramda
    * @param n number of elements to group by
    * @returns list of lists of (up to) n elements
    */
@@ -126,13 +125,10 @@ export class List<T> extends Array {
 
   /**
    * @method between
-   * @description return a subset of elements by their sort ordering
+   * @description return a subset of elements by their sort ordering. Note: can be used in two forms: `list.between(start, end)` and `list.between(start).and(end)`
    * @param start the start of the range
    * @param end the end of the range
-   * @returns elements in the list that are comparably
-   * between the wtart and the end of the list
-   * Note: can be used in two forms: `list.between(start, end)`and
-   * `list.between(start).and(end)`
+   * @returns elements in the list
    */
   @Before(andable('startIndex'))
   between(start: T, end?: T): List<T> {
@@ -146,8 +142,7 @@ export class List<T> extends Array {
    * @method and
    * @description completion of a between call
    * @param end the end of the range delimiting the subset
-   * @returns elements in the list that are comparably
-   * between the wtart and the end of the list
+   * @returns elements in the list that are comparably between the wtart and the end of the list
    */
   @InterruptingBefore(andable('startIndex').after())
   and(this: Andable<List<T>>, end: T, start?: T): List<T> {

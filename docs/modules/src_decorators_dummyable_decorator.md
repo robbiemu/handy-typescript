@@ -23,7 +23,7 @@
 
 Ƭ **DummyableFactoryResponse**: Function & { `originalMethod?`: Function  }
 
-Defined in: [src/decorators/dummyable.decorator.ts:64](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/decorators/dummyable.decorator.ts#L64)
+Defined in: [src/decorators/dummyable.decorator.ts:64](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/decorators/dummyable.decorator.ts#L64)
 
 ## Functions
 
@@ -41,7 +41,7 @@ decorator that can replace and reuse a method
 
 **Returns:** (`_targetClass`: *Partial*<(...`args`: *any*[]) => *any*\>, `propertyKey`: *string* \| *symbol*, `descriptor`: PropertyDescriptor) => PropertyDescriptor
 
-Defined in: [src/decorators/dummyable.decorator.ts:5](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/decorators/dummyable.decorator.ts#L5)
+Defined in: [src/decorators/dummyable.decorator.ts:5](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/decorators/dummyable.decorator.ts#L5)
 
 ___
 
@@ -61,4 +61,4 @@ ___
 
 compliant Dummyable conf parameter
 
-Defined in: [src/decorators/dummyable.decorator.ts:35](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/decorators/dummyable.decorator.ts#L35)
+Defined in: [src/decorators/dummyable.decorator.ts:35](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/decorators/dummyable.decorator.ts#L35)

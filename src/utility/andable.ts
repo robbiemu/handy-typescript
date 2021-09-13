@@ -5,7 +5,7 @@ export type Andable<T> = T & { [key: string]: any }
 export type AndableFunction = Function & { after: Function }
 
 export function andable(...keys: string[]): AndableFunction {
-  const fn = function (...args) {
+  const fn = function () {
     const address = md5(this)
     keys.forEach((key, i) => {
       if (!AndableUniverse.andables[address]) {
@@ -14,21 +14,31 @@ export function andable(...keys: string[]): AndableFunction {
       // eslint-disable-next-line prefer-rest-params
       AndableUniverse.andables[address][key] = arguments[i]
     })
-    AndableUniverse.afters[address] = args
+    return { flag: true }
   }
   fn.after = function () {
-    const address = md5(this)
-    this.originalMethod(
-      ...AndableUniverse.andables[address].concat(
-        Object.values(AndableUniverse.afters[address]),
-      ),
-    )
+    return function () {
+      const address = md5(this)
+      return {
+        flag: true,
+        // eslint-disable-next-line prefer-rest-params
+        payload: [...arguments].concat(
+          Object.values(AndableUniverse.andables[address]),
+        ),
+      }
+    }
   }
 
   return fn
 }
 
 export class AndableUniverse {
-  static andables = <any>{}
-  static afters = <any>{}
+  static andables = new Proxy(<any>{}, {
+    get: (target, key) => {
+      if (!target[key]) {
+        target[key] = {}
+      }
+      return target[key]
+    },
+  })
 }

@@ -8,6 +8,7 @@
 
 - [ArrowFunction](types_arrow_function.md#arrowfunction)
 - [Comparator](types_arrow_function.md#comparator)
+- [Reducer](types_arrow_function.md#reducer)
 
 ## Type aliases
 
@@ -22,7 +23,7 @@
 | `Params` | *unknown*[] |
 | `T` | - |
 
-Defined in: [types/arrow-function.d.ts:2](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/types/arrow-function.d.ts#L2)
+Defined in: [types/arrow-function.d.ts:2](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/types/arrow-function.d.ts#L2)
 
 ___
 
@@ -36,4 +37,33 @@ ___
 | :------ |
 | `T` |
 
-Defined in: [types/arrow-function.d.ts:4](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/types/arrow-function.d.ts#L4)
+Defined in: [types/arrow-function.d.ts:4](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/types/arrow-function.d.ts#L4)
+
+___
+
+### Reducer
+
+Ƭ **Reducer**<T\>: (`previousValue`: *any*, `currentValue`: *any*, `currentIndex`: *number*, `array`: *any*[]) => T
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Type declaration
+
+▸ (`previousValue`: *any*, `currentValue`: *any*, `currentIndex`: *number*, `array`: *any*[]): T
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `previousValue` | *any* |
+| `currentValue` | *any* |
+| `currentIndex` | *number* |
+| `array` | *any*[] |
+
+**Returns:** T
+
+Defined in: [types/arrow-function.d.ts:6](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/types/arrow-function.d.ts#L6)

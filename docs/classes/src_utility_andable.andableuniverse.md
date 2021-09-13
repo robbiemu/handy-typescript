@@ -12,7 +12,6 @@
 
 ### Properties
 
-- [afters](src_utility_andable.andableuniverse.md#afters)
 - [andables](src_utility_andable.andableuniverse.md#andables)
 
 ## Constructors
@@ -25,16 +24,8 @@
 
 ## Properties
 
-### afters
-
-▪ `Static` **afters**: *any*
-
-Defined in: [src/utility/andable.ts:33](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/andable.ts#L33)
-
-___
-
 ### andables
 
 ▪ `Static` **andables**: *any*
 
-Defined in: [src/utility/andable.ts:32](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/andable.ts#L32)
+Defined in: [src/utility/andable.ts:36](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/andable.ts#L36)

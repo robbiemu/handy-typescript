@@ -4,7 +4,7 @@
 
 [src/utility/list](../modules/src_utility_list.md).List
 
-helper methods on Arrays, without polluting the Array object
+**`description`** helper methods on Arrays, without polluting the Array object
 
 ## Type parameters
 
@@ -43,6 +43,7 @@ helper methods on Arrays, without polluting the Array object
 - [between](src_utility_list.list.md#between)
 - [concat](src_utility_list.list.md#concat)
 - [copyWithin](src_utility_list.list.md#copywithin)
+- [count](src_utility_list.list.md#count)
 - [entries](src_utility_list.list.md#entries)
 - [every](src_utility_list.list.md#every)
 - [fill](src_utility_list.list.md#fill)
@@ -59,6 +60,8 @@ helper methods on Arrays, without polluting the Array object
 - [lastIndexOf](src_utility_list.list.md#lastindexof)
 - [map](src_utility_list.list.md#map)
 - [mean](src_utility_list.list.md#mean)
+- [median](src_utility_list.list.md#median)
+- [mode](src_utility_list.list.md#mode)
 - [oneOf](src_utility_list.list.md#oneof)
 - [pop](src_utility_list.list.md#pop)
 - [push](src_utility_list.list.md#push)
@@ -134,9 +137,13 @@ Defined in: node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:314
 
 • get **first**(): T
 
+**`property`** first Accessor
+
+**`description`** first element in the list
+
 **Returns:** T
 
-Defined in: [src/utility/list.ts:27](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L27)
+Defined in: [src/utility/list.ts:39](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L39)
 
 ___
 
@@ -144,9 +151,13 @@ ___
 
 • get **last**(): T
 
+**`property`** last Accessor
+
+**`description`** last element in the list
+
 **Returns:** T
 
-Defined in: [src/utility/list.ts:23](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L23)
+Defined in: [src/utility/list.ts:31](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L31)
 
 ## Methods
 
@@ -193,16 +204,23 @@ ___
 
 ▸ **and**(`end`: T, `start?`: T): [*List*](src_utility_list.list.md)<T\>
 
+**`method`** and
+
+**`description`** completion of a between call
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `end` | T |
-| `start?` | T |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `end` | T | the end of the range delimiting the subset |
+| `start?` | T | - |
 
 **Returns:** [*List*](src_utility_list.list.md)<T\>
 
-Defined in: [src/utility/list.ts:56](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L56)
+elements in the list that are comparably
+between the wtart and the end of the list
+
+Defined in: [src/utility/list.ts:153](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L153)
 
 ___
 
@@ -210,15 +228,22 @@ ___
 
 ▸ **aperture**(`n`: *number*): [*List*](src_utility_list.list.md)<[*List*](src_utility_list.list.md)<T\>\>
 
+**`method`** aperture
+
+**`description`** Returns a new list, composed of n-tuples of consecutive elements.
+Note: inspired by, and perhaps copied from Ramda
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `n` | *number* |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `n` | *number* | number of elements to group by |
 
 **Returns:** [*List*](src_utility_list.list.md)<[*List*](src_utility_list.list.md)<T\>\>
 
-Defined in: [src/utility/list.ts:31](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L31)
+list of lists of (up to) n elements
+
+Defined in: [src/utility/list.ts:50](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L50)
 
 ___
 
@@ -226,16 +251,25 @@ ___
 
 ▸ **between**(`start`: T, `end?`: T): [*List*](src_utility_list.list.md)<T\>
 
+**`method`** between
+
+**`description`** return a subset of elements by their sort ordering
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `start` | T |
-| `end?` | T |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `start` | T | the start of the range |
+| `end?` | T | the end of the range |
 
 **Returns:** [*List*](src_utility_list.list.md)<T\>
 
-Defined in: [src/utility/list.ts:48](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L48)
+elements in the list that are comparably
+between the wtart and the end of the list
+Note: can be used in two forms: `list.between(start, end)`and
+`list.between(start).and(end)`
+
+Defined in: [src/utility/list.ts:138](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L138)
 
 ___
 
@@ -297,6 +331,20 @@ to the same array starting at position target
 Inherited from: Array.copyWithin
 
 Defined in: node_modules/typescript/lib/lib.es2015.core.d.ts:64
+
+___
+
+### count
+
+▸ **count**(): *Map*<T, number\>
+
+**`method`** count
+
+**Returns:** *Map*<T, number\>
+
+a map of elements to the tally of their occurance
+
+Defined in: [src/utility/list.ts:123](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L123)
 
 ___
 
@@ -400,7 +448,7 @@ ___
 
 Overrides: Array.filter
 
-Defined in: [src/utility/list.ts:15](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L15)
+Defined in: [src/utility/list.ts:19](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L19)
 
 ___
 
@@ -676,9 +724,53 @@ ___
 
 ▸ **mean**(): *number*
 
+**`method`** mean
+
+**`description`** calculates the mean of the list
+
 **Returns:** *number*
 
-Defined in: [src/utility/list.ts:43](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L43)
+the mean of a (numeric) list
+
+Defined in: [src/utility/list.ts:72](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L72)
+
+___
+
+### median
+
+▸ **median**(): *number* \| [*List*](src_utility_list.list.md)<T\>
+
+**`method`** median
+
+**`description`** calculates the median of the list
+
+**Returns:** *number* \| [*List*](src_utility_list.list.md)<T\>
+
+the median of the list
+
+Defined in: [src/utility/list.ts:81](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L81)
+
+___
+
+### mode
+
+▸ **mode**(`multimodal?`: *boolean*): T
+
+**`method`** mode
+
+**`description`** calculates the mode of the list
+
+#### Parameters
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `multimodal` | *boolean* | false | in the case of ties, return them all |
+
+**Returns:** T
+
+the most frequently occuring element(s) in the list
+
+Defined in: [src/utility/list.ts:103](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L103)
 
 ___
 
@@ -686,9 +778,15 @@ ___
 
 ▸ **oneOf**(): T
 
+**`method`** onOf
+
+**`description`** get a random element from the list
+
 **Returns:** T
 
-Defined in: [src/utility/list.ts:75](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L75)
+an element of the list
+
+Defined in: [src/utility/list.ts:187](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L187)
 
 ___
 
@@ -847,15 +945,21 @@ ___
 
 ▸ **remove**(`n`: T): T
 
+**`method`** remove
+
+**`description`** removes an element from the list
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `n` | T |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `n` | T | element to remove |
 
 **Returns:** T
 
-Defined in: [src/utility/list.ts:79](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L79)
+the element
+
+Defined in: [src/utility/list.ts:197](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L197)
 
 ___
 
@@ -893,9 +997,13 @@ ___
 
 ▸ **shuffle**(): *void*
 
+**`method`** shuffle
+
+**`description`** shuffle the list
+
 **Returns:** *void*
 
-Defined in: [src/utility/list.ts:66](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L66)
+Defined in: [src/utility/list.ts:173](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L173)
 
 ___
 
@@ -920,7 +1028,7 @@ ___
 
 Overrides: Array.slice
 
-Defined in: [src/utility/list.ts:19](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L19)
+Defined in: [src/utility/list.ts:23](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L23)
 
 ___
 
@@ -1013,9 +1121,15 @@ ___
 
 ▸ **sum**(): *number*
 
+**`method`** sum
+
+**`description`** sums a list
+
 **Returns:** *number*
 
-Defined in: [src/utility/list.ts:39](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L39)
+the sum of the lest, as per the + operator
+
+Defined in: [src/utility/list.ts:63](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L63)
 
 ___
 
@@ -1071,15 +1185,21 @@ ___
 
 ▸ **until**(`value`: T): [*List*](src_utility_list.list.md)<T\>
 
+**`method`** until
+
+**`description`** values from the start until a value
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | T |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | T | the value after the last value in the desired subset |
 
 **Returns:** [*List*](src_utility_list.list.md)<T\>
 
-Defined in: [src/utility/list.ts:61](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L61)
+a subet of of elements of the list
+
+Defined in: [src/utility/list.ts:164](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L164)
 
 ___
 
@@ -1117,7 +1237,7 @@ ___
 
 Overrides: Array.from
 
-Defined in: [src/utility/list.ts:11](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/list.ts#L11)
+Defined in: [src/utility/list.ts:15](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/list.ts#L15)
 
 ___
 

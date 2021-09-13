@@ -20,8 +20,8 @@ decorator execute code _after_ method completes
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `afterFunction` | Function | method to decorate |
+| `afterFunction` | Function | method to decorate TODO - add support for accessors |
 
 **Returns:** (`_targetClass`: *Partial*<(...`args`: *any*[]) => *any*\>, `_propertyKey`: *string* \| *symbol*, `descriptor`: PropertyDescriptor) => PropertyDescriptor
 
-Defined in: [src/aop/after.decorator.ts:5](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/aop/after.decorator.ts#L5)
+Defined in: [src/aop/after.decorator.ts:6](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/aop/after.decorator.ts#L6)

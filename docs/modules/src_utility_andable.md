@@ -29,7 +29,7 @@
 | :------ |
 | `T` |
 
-Defined in: [src/utility/andable.ts:3](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/andable.ts#L3)
+Defined in: [src/utility/andable.ts:3](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/andable.ts#L3)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 Ƭ **AndableFunction**: Function & { `after`: Function  }
 
-Defined in: [src/utility/andable.ts:5](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/andable.ts#L5)
+Defined in: [src/utility/andable.ts:5](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/andable.ts#L5)
 
 ## Functions
 
@@ -53,4 +53,4 @@ Defined in: [src/utility/andable.ts:5](https://github.com/robbiemu/handy-typescr
 
 **Returns:** [*AndableFunction*](src_utility_andable.md#andablefunction)
 
-Defined in: [src/utility/andable.ts:7](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/utility/andable.ts#L7)
+Defined in: [src/utility/andable.ts:7](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/andable.ts#L7)

@@ -32,4 +32,4 @@
 
 • **state$**: *Observable*<T\>
 
-Defined in: [src/decorators/stateful.decorator.ts:23](https://github.com/robbiemu/handy-typescript/blob/8d0f93c/src/decorators/stateful.decorator.ts#L23)
+Defined in: [src/decorators/stateful.decorator.ts:23](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/decorators/stateful.decorator.ts#L23)

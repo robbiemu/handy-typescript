@@ -24,4 +24,4 @@ comparitor to find not defined values
 
 **Returns:** *boolean*
 
-Defined in: [src/comparitors/is-null-or-undefined.ts:6](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/comparitors/is-null-or-undefined.ts#L6)
+Defined in: [src/comparitors/is-null-or-undefined.ts:6](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/comparitors/is-null-or-undefined.ts#L6)

@@ -14,7 +14,9 @@
 
 ▸ **compose**(...`fns`: Function[]): *function*
 
-compose an ordered list of execution
+**`function`** compose
+
+**`description`** compose an ordered list of execution from current context
 
 #### Parameters
 
@@ -26,4 +28,4 @@ compose an ordered list of execution
 
 a function taht will call each fn in turn
 
-Defined in: [src/utility/compose.ts:6](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/compose.ts#L6)
+Defined in: [src/utility/compose.ts:7](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/compose.ts#L7)

@@ -31,7 +31,7 @@
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:7](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/math-lambdas.ts#L7)
+Defined in: [src/utility/math-lambdas.ts:7](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/math-lambdas.ts#L7)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 **Returns:** *Map*<T, number\>
 
-Defined in: [src/utility/math-lambdas.ts:1](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/math-lambdas.ts#L1)
+Defined in: [src/utility/math-lambdas.ts:1](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/math-lambdas.ts#L1)
 
 ___
 
@@ -71,17 +71,23 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:10](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/math-lambdas.ts#L10)
+Defined in: [src/utility/math-lambdas.ts:10](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/math-lambdas.ts#L10)
 
 ___
 
 ### mean
 
-▸ **mean**(): *number*
+▸ **mean**(`o`: *number*[]): *number*
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `o` | *number*[] |
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:18](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/math-lambdas.ts#L18)
+Defined in: [src/utility/math-lambdas.ts:18](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/math-lambdas.ts#L18)
 
 ___
 
@@ -98,7 +104,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:11](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/math-lambdas.ts#L11)
+Defined in: [src/utility/math-lambdas.ts:11](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/math-lambdas.ts#L11)
 
 ___
 
@@ -115,7 +121,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:9](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/math-lambdas.ts#L9)
+Defined in: [src/utility/math-lambdas.ts:9](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/math-lambdas.ts#L9)
 
 ___
 
@@ -132,7 +138,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:12](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/math-lambdas.ts#L12)
+Defined in: [src/utility/math-lambdas.ts:12](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/math-lambdas.ts#L12)
 
 ___
 
@@ -149,14 +155,20 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:8](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/math-lambdas.ts#L8)
+Defined in: [src/utility/math-lambdas.ts:8](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/math-lambdas.ts#L8)
 
 ___
 
 ### sum
 
-▸ **sum**(): *number*
+▸ **sum**(`o`: *number*[]): *number*
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `o` | *number*[] |
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:14](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/math-lambdas.ts#L14)
+Defined in: [src/utility/math-lambdas.ts:14](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/math-lambdas.ts#L14)

@@ -14,7 +14,7 @@
 
 ▸ **zip**(...`iterables`: *any*[]): *object*
 
-zip
+**`method`** zip
 usage:
 const zipped = zip(['a', 'b', 'c'], ['d', 'e', 'f', 'g']);
 for (const x of zipped) {
@@ -26,6 +26,8 @@ for (const x of zipped) {
 // ['c', 'f']
 
 TODO -- WHAT return type is this?
+
+**`src`** https://exploringjs.com/es6/ch_iteration.html
 
 #### Parameters
 
@@ -40,4 +42,4 @@ TODO -- WHAT return type is this?
 | `[Symbol.iterator]` | () => *any* |
 | `next` | () => { `done`: *undefined* = true; `value`: *any*[]  } \| { `done`: *boolean* = true; `value`: *undefined*  } |
 
-Defined in: [src/utility/zip.ts:15](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/zip.ts#L15)
+Defined in: [src/utility/zip.ts:17](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/zip.ts#L17)

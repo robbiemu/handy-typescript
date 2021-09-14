@@ -1,6 +1,6 @@
-[handy-typescript](../README.md) / [Modules](../modules.md) / src/utility/Entry
+[handy-typescript](../README.md) / [Modules](../modules.md) / src/utility/entry
 
-# Module: src/utility/Entry
+# Module: src/utility/entry
 
 ## Table of contents
 

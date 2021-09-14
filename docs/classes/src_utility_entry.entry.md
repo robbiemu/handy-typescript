@@ -1,8 +1,10 @@
-[handy-typescript](../README.md) / [Modules](../modules.md) / [src/utility/Entry](../modules/src_utility_entry.md) / Entry
+[handy-typescript](../README.md) / [Modules](../modules.md) / [src/utility/entry](../modules/src_utility_entry.md) / Entry
 
 # Class: Entry
 
-[src/utility/Entry](../modules/src_utility_entry.md).Entry
+[src/utility/entry](../modules/src_utility_entry.md).Entry
+
+**`description`** helper methods for working with entries
 
 ## Table of contents
 
@@ -31,6 +33,10 @@
 
 ▸ `Static` **keyOf**<K, V\>(`entry`: [*FixedSizeArray*](../modules/src_utility_fixed_array_size.md#fixedsizearray)<``2``, K & V, ``"0"``\>): K
 
+**`static`**
+
+**`method`** keyOf the key of an entry
+
 #### Type parameters
 
 | Name |
@@ -46,7 +52,9 @@
 
 **Returns:** K
 
-Defined in: src/utility/Entry.ts:4
+the key
+
+Defined in: [src/utility/entry.ts:14](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/entry.ts#L14)
 
 ___
 
@@ -54,6 +62,10 @@ ___
 
 ▸ `Static` **maxKey**<K, V\>(`transformer?`: Function): [[*Reducer*](../modules/types_arrow_function.md#reducer)<K\>, ``null``]
 
+**`static`**
+
+**`method`** maxKey
+
 #### Type parameters
 
 | Name |
@@ -63,13 +75,15 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `transformer?` | Function |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `transformer?` | Function | a helper function to traverse entries to comparing which is max, by default by comparing the keys |
 
 **Returns:** [[*Reducer*](../modules/types_arrow_function.md#reducer)<K\>, ``null``]
 
-Defined in: src/utility/Entry.ts:12
+helper args to the reduce function which produces the max key according to the greater-than operator on the transformed entry
+
+Defined in: [src/utility/entry.ts:34](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/entry.ts#L34)
 
 ___
 
@@ -77,6 +91,10 @@ ___
 
 ▸ `Static` **maxKeys**<K, V\>(`transformer?`: Function): [[*Reducer*](../modules/types_arrow_function.md#reducer)<K\>, ``null``]
 
+**`static`**
+
+**`method`** maxKeys
+
 #### Type parameters
 
 | Name |
@@ -86,19 +104,25 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `transformer?` | Function |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `transformer?` | Function | a helper function to traverse entries to comparing which is max, by default by comparing the keys |
 
 **Returns:** [[*Reducer*](../modules/types_arrow_function.md#reducer)<K\>, ``null``]
 
-Defined in: src/utility/Entry.ts:30
+helper args to the reduce function which produces all maximal keys according to the greater-than operator on the transformed entry
+
+Defined in: [src/utility/entry.ts:58](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/entry.ts#L58)
 
 ___
 
 ### valueOf
 
 ▸ `Static` **valueOf**<K, V\>(`entry`: [*FixedSizeArray*](../modules/src_utility_fixed_array_size.md#fixedsizearray)<``2``, K & V, ``"0"``\>): V
+
+**`static`**
+
+**`method`** valueOf the value of an entry
 
 #### Type parameters
 
@@ -115,4 +139,6 @@ ___
 
 **Returns:** V
 
-Defined in: src/utility/Entry.ts:8
+the value
+
+Defined in: [src/utility/entry.ts:24](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/entry.ts#L24)

@@ -29,4 +29,4 @@ assert a condition or throw
 
 **Returns:** asserts condition
 
-Defined in: [src/utility/assert.ts:11](https://github.com/robbiemu/handy-typescript/blob/1dd3e37/src/utility/assert.ts#L11)
+Defined in: [src/utility/assert.ts:11](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/utility/assert.ts#L11)

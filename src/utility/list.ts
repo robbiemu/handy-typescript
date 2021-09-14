@@ -1,6 +1,6 @@
 import { InterruptingBefore } from '@src/aop/interrupting-before.decorator'
 import { Before } from '@src/aop/before.decorator'
-import { andable, Andable } from './andable'
+import { Andable } from './andable'
 import { Entry } from './entry'
 import { add, count } from './math-lambdas'
 import { randomInt } from './random-int'
@@ -130,7 +130,7 @@ export class List<T> extends Array {
    * @param end the end of the range
    * @returns elements in the list
    */
-  @Before(andable('startIndex'))
+  @Before(Andable.before('startIndex'))
   between(start: T, end?: T): List<T> {
     if (arguments.length === 2) {
       return this.filter(x => x >= start && x <= end)
@@ -144,8 +144,8 @@ export class List<T> extends Array {
    * @param end the end of the range delimiting the subset
    * @returns elements in the list that are comparably between the wtart and the end of the list
    */
-  @InterruptingBefore(andable('startIndex').after())
-  and(this: Andable<List<T>>, end: T, start?: T): List<T> {
+  @InterruptingBefore(Andable.after('startIndex'))
+  and(this: List<T>, end: T, start?: T): List<T> {
     assert(start)
     return this.filter(x => x >= start && x <= end) as List<T>
   }

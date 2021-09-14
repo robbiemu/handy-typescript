@@ -1,4 +1,5 @@
-/** zip
+/**
+ * @method zip
  * usage:
  * const zipped = zip(['a', 'b', 'c'], ['d', 'e', 'f', 'g']);
  * for (const x of zipped) {
@@ -10,6 +11,7 @@
  * // ['c', 'f']
  *
  * TODO -- WHAT return type is this?
+ * @src https://exploringjs.com/es6/ch_iteration.html
  **/
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function zip(...iterables: any[]) {

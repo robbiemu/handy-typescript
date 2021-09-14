@@ -11,10 +11,10 @@ export const divide = (a: number, b: number): number => a / b
 export const modulo = (a: number, b: number): number => a % b
 export const power = (a: number, b: number): number => Math.pow(a, b)
 
-export function sum(this: number[]): number {
-  return this.reduce(add)
+export function sum(o: number[]): number {
+  return o.reduce(add)
 }
 
-export function mean(this: number[]): number {
-  return this.reduce(add) / this.length
+export function mean(o: number[]): number {
+  return o.reduce(add) / o.length
 }

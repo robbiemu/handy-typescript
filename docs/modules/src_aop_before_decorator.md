@@ -14,14 +14,18 @@
 
 ▸ **Before**(`beforeFunction`: Function): *function*
 
-decorator to execute code before method execution
+**`function`** Before
+
+**`description`** decorator to execute code before method execution
+
+**`todo`** add support for accessors
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `beforeFunction` | Function | method to decorate TODO - add support for accessors |
+| `beforeFunction` | Function | method to decorate |
 
 **Returns:** (`_targetClass`: *Partial*<(...`args`: *any*[]) => *any*\>, `_propertyKey`: *string* \| *symbol*, `descriptor`: PropertyDescriptor) => PropertyDescriptor
 
-Defined in: [src/aop/before.decorator.ts:6](https://github.com/robbiemu/handy-typescript/blob/2cd4d26/src/aop/before.decorator.ts#L6)
+Defined in: [src/aop/before.decorator.ts:7](https://github.com/robbiemu/handy-typescript/blob/8d5cf58/src/aop/before.decorator.ts#L7)

@@ -7,6 +7,7 @@
 ### Functions
 
 - [add](src_utility_math_lambdas.md#add)
+- [combinations](src_utility_math_lambdas.md#combinations)
 - [count](src_utility_math_lambdas.md#count)
 - [divide](src_utility_math_lambdas.md#divide)
 - [mean](src_utility_math_lambdas.md#mean)
@@ -31,7 +32,36 @@
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:7](https://github.com/robbiemu/handy-typescript/blob/8d5cf58/src/utility/math-lambdas.ts#L7)
+Defined in: [src/utility/math-lambdas.ts:7](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/math-lambdas.ts#L7)
+
+___
+
+### combinations
+
+▸ `Const` **combinations**<T\>(`set`: T[], `k`: *number*): T[][]
+
+**`function`** combinations
+
+**`description`** derrive combinations of length k from a set
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `set` | T[] | elements to derrive combinations of |
+| `k` | *number* | number of combinations |
+
+**Returns:** T[][]
+
+an array of k-lemngth choices from the set
+
+Defined in: [src/utility/math-lambdas.ts:29](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/math-lambdas.ts#L29)
 
 ___
 
@@ -54,7 +84,7 @@ ___
 
 **Returns:** *Map*<T, number\>
 
-Defined in: [src/utility/math-lambdas.ts:1](https://github.com/robbiemu/handy-typescript/blob/8d5cf58/src/utility/math-lambdas.ts#L1)
+Defined in: [src/utility/math-lambdas.ts:1](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/math-lambdas.ts#L1)
 
 ___
 
@@ -71,7 +101,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:10](https://github.com/robbiemu/handy-typescript/blob/8d5cf58/src/utility/math-lambdas.ts#L10)
+Defined in: [src/utility/math-lambdas.ts:10](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/math-lambdas.ts#L10)
 
 ___
 
@@ -87,7 +117,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:18](https://github.com/robbiemu/handy-typescript/blob/8d5cf58/src/utility/math-lambdas.ts#L18)
+Defined in: [src/utility/math-lambdas.ts:18](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/math-lambdas.ts#L18)
 
 ___
 
@@ -104,7 +134,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:11](https://github.com/robbiemu/handy-typescript/blob/8d5cf58/src/utility/math-lambdas.ts#L11)
+Defined in: [src/utility/math-lambdas.ts:11](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/math-lambdas.ts#L11)
 
 ___
 
@@ -121,7 +151,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:9](https://github.com/robbiemu/handy-typescript/blob/8d5cf58/src/utility/math-lambdas.ts#L9)
+Defined in: [src/utility/math-lambdas.ts:9](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/math-lambdas.ts#L9)
 
 ___
 
@@ -138,7 +168,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:12](https://github.com/robbiemu/handy-typescript/blob/8d5cf58/src/utility/math-lambdas.ts#L12)
+Defined in: [src/utility/math-lambdas.ts:12](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/math-lambdas.ts#L12)
 
 ___
 
@@ -155,7 +185,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:8](https://github.com/robbiemu/handy-typescript/blob/8d5cf58/src/utility/math-lambdas.ts#L8)
+Defined in: [src/utility/math-lambdas.ts:8](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/math-lambdas.ts#L8)
 
 ___
 
@@ -171,4 +201,4 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:14](https://github.com/robbiemu/handy-typescript/blob/8d5cf58/src/utility/math-lambdas.ts#L14)
+Defined in: [src/utility/math-lambdas.ts:14](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/math-lambdas.ts#L14)

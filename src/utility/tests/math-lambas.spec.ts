@@ -8,6 +8,7 @@ import {
   power,
   sum,
   mean,
+  combinations,
 } from '../math-lambdas'
 
 describe('count', () => {
@@ -86,5 +87,23 @@ describe('sum', () => {
 describe('mean', () => {
   it('should find the mean', () => {
     expect(mean([4, 2, 3])).toEqual(3)
+  })
+})
+
+describe('combinations', () => {
+  it('should produce all combinations lenfth k of an array of items \\in N', () => {
+    const test = (n, k) =>
+      combinations(
+        [...Array(n)].map((_, i) => i + 1),
+        k,
+      )
+
+    expect(test(3, 1).length).toEqual(3)
+    expect(test(3, 1)).toContainEqual([3])
+    expect(test(3, 2).length).toEqual(3)
+    expect(test(3, 2)).toContainEqual([1, 3])
+    expect(test(3, 3).length).toEqual(1)
+    expect(test(10, 4).length).toEqual(210)
+    expect(test(20, 8).length).toEqual(125970)
   })
 })

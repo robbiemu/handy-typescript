@@ -23,7 +23,7 @@
 | `Params` | *unknown*[] |
 | `T` | - |
 
-Defined in: [types/arrow-function.d.ts:2](https://github.com/robbiemu/handy-typescript/blob/064cc3a/types/arrow-function.d.ts#L2)
+Defined in: [types/arrow-function.d.ts:2](https://github.com/robbiemu/handy-typescript/blob/2f4db4b/types/arrow-function.d.ts#L2)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 | :------ |
 | `T` |
 
-Defined in: [types/arrow-function.d.ts:4](https://github.com/robbiemu/handy-typescript/blob/064cc3a/types/arrow-function.d.ts#L4)
+Defined in: [types/arrow-function.d.ts:4](https://github.com/robbiemu/handy-typescript/blob/2f4db4b/types/arrow-function.d.ts#L4)
 
 ___
 
@@ -66,4 +66,4 @@ ___
 
 **Returns:** T
 
-Defined in: [types/arrow-function.d.ts:6](https://github.com/robbiemu/handy-typescript/blob/064cc3a/types/arrow-function.d.ts#L6)
+Defined in: [types/arrow-function.d.ts:6](https://github.com/robbiemu/handy-typescript/blob/2f4db4b/types/arrow-function.d.ts#L6)

@@ -33,4 +33,4 @@ assert(cases.some(isOdd))
 
 comparator
 
-Defined in: [src/comparitors/factory-has-value.ts:15](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/comparitors/factory-has-value.ts#L15)
+Defined in: [src/comparitors/factory-has-value.ts:15](https://github.com/robbiemu/handy-typescript/blob/2f4db4b/src/comparitors/factory-has-value.ts#L15)

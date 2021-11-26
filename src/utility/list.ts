@@ -24,6 +24,10 @@ export class List<T> extends Array {
     return super.slice(start, end) as List<T>
   }
 
+  get isEmpty(): boolean {
+    return this.length === 0
+  }
+
   /**
    * @property last Accessor
    * @description last element in the list

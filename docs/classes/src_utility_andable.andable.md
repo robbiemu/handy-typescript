@@ -33,7 +33,7 @@
 
 ▪ `Static` **andables**: *any*
 
-Defined in: [src/utility/andable.ts:4](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/andable.ts#L4)
+Defined in: [src/utility/andable.ts:4](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/andable.ts#L4)
 
 ## Methods
 
@@ -49,7 +49,7 @@ Defined in: [src/utility/andable.ts:4](https://github.com/robbiemu/handy-typescr
 
 **Returns:** Function
 
-Defined in: [src/utility/andable.ts:28](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/andable.ts#L28)
+Defined in: [src/utility/andable.ts:28](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/andable.ts#L28)
 
 ___
 
@@ -65,4 +65,4 @@ ___
 
 **Returns:** Function
 
-Defined in: [src/utility/andable.ts:13](https://github.com/robbiemu/handy-typescript/blob/87af4f8/src/utility/andable.ts#L13)
+Defined in: [src/utility/andable.ts:13](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/andable.ts#L13)

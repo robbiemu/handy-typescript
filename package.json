@@ -4,9 +4,10 @@
   "description": "a collection of tools I use in typescript",
   "main": "dist/index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
-    "build": "ttsc",
     "prepare": "husky install",
+    "build": "ttsc",
     "postbuild": "tsc-alias -p tsconfig.json",
     "pretest": "jest --clearCache",
     "test": "jest",

@@ -26,4 +26,4 @@ the parameters with an [AopDecoratorPayload](../interfaces/src_aop_aop_decorator
 
 **Returns:** (`target`: *Partial*<(...`args`: *any*[]) => *any*\>, `propertyKey`: *string*, `descriptor`: PropertyDescriptor) => *void*
 
-Defined in: [src/aop/interrupting-before.decorator.ts:10](https://github.com/robbiemu/handy-typescript/blob/2f4db4b/src/aop/interrupting-before.decorator.ts#L10)
+Defined in: [src/aop/interrupting-before.decorator.ts:10](https://github.com/robbiemu/handy-typescript/blob/02d2b30/src/aop/interrupting-before.decorator.ts#L10)

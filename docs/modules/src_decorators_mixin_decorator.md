@@ -26,4 +26,4 @@
 
 **Returns:** ClassDecorator
 
-Defined in: [src/decorators/mixin.decorator.ts:25](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/decorators/mixin.decorator.ts#L25)
+Defined in: [src/decorators/mixin.decorator.ts:25](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/decorators/mixin.decorator.ts#L25)

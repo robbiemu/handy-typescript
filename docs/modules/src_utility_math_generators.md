@@ -30,7 +30,7 @@
 
 **Returns:** *Generator*<T[], T[], undefined\>
 
-Defined in: [src/utility/math-generators.ts:3](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/math-generators.ts#L3)
+Defined in: [src/utility/math-generators.ts:3](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/math-generators.ts#L3)
 
 ___
 
@@ -48,4 +48,4 @@ ___
 
 **Returns:** *Generator*<number\>
 
-Defined in: [src/utility/math-generators.ts:24](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/math-generators.ts#L24)
+Defined in: [src/utility/math-generators.ts:24](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/math-generators.ts#L24)

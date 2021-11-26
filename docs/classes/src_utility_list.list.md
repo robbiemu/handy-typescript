@@ -144,7 +144,7 @@ Defined in: node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:314
 
 **Returns:** T
 
-Defined in: [src/utility/list.ts:43](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L43)
+Defined in: [src/utility/list.ts:43](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L43)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 **Returns:** *boolean*
 
-Defined in: [src/utility/list.ts:27](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L27)
+Defined in: [src/utility/list.ts:27](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L27)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 **Returns:** T
 
-Defined in: [src/utility/list.ts:35](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L35)
+Defined in: [src/utility/list.ts:35](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L35)
 
 ## Methods
 
@@ -230,7 +230,7 @@ ___
 
 elements in the list that are comparably between the wtart and the end of the list
 
-Defined in: [src/utility/list.ts:152](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L152)
+Defined in: [src/utility/list.ts:152](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L152)
 
 ___
 
@@ -252,7 +252,7 @@ ___
 
 list of lists of (up to) n elements
 
-Defined in: [src/utility/list.ts:53](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L53)
+Defined in: [src/utility/list.ts:53](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L53)
 
 ___
 
@@ -275,7 +275,7 @@ ___
 
 elements in the list
 
-Defined in: [src/utility/list.ts:138](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L138)
+Defined in: [src/utility/list.ts:138](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L138)
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 a map of elements to the tally of their occurance
 
-Defined in: [src/utility/list.ts:126](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L126)
+Defined in: [src/utility/list.ts:126](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L126)
 
 ___
 
@@ -454,7 +454,7 @@ ___
 
 Overrides: Array.filter
 
-Defined in: [src/utility/list.ts:19](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L19)
+Defined in: [src/utility/list.ts:19](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L19)
 
 ___
 
@@ -738,7 +738,7 @@ ___
 
 the mean of a (numeric) list
 
-Defined in: [src/utility/list.ts:75](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L75)
+Defined in: [src/utility/list.ts:75](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L75)
 
 ___
 
@@ -754,7 +754,7 @@ ___
 
 the median of the list
 
-Defined in: [src/utility/list.ts:84](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L84)
+Defined in: [src/utility/list.ts:84](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L84)
 
 ___
 
@@ -776,7 +776,7 @@ ___
 
 the most frequently occuring element(s) in the list
 
-Defined in: [src/utility/list.ts:106](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L106)
+Defined in: [src/utility/list.ts:106](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L106)
 
 ___
 
@@ -792,7 +792,7 @@ ___
 
 an element of the list
 
-Defined in: [src/utility/list.ts:186](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L186)
+Defined in: [src/utility/list.ts:186](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L186)
 
 ___
 
@@ -965,7 +965,7 @@ ___
 
 the element
 
-Defined in: [src/utility/list.ts:196](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L196)
+Defined in: [src/utility/list.ts:196](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L196)
 
 ___
 
@@ -1009,7 +1009,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/utility/list.ts:172](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L172)
+Defined in: [src/utility/list.ts:172](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L172)
 
 ___
 
@@ -1034,7 +1034,7 @@ ___
 
 Overrides: Array.slice
 
-Defined in: [src/utility/list.ts:23](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L23)
+Defined in: [src/utility/list.ts:23](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L23)
 
 ___
 
@@ -1135,7 +1135,7 @@ ___
 
 the sum of the lest, as per the + operator
 
-Defined in: [src/utility/list.ts:66](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L66)
+Defined in: [src/utility/list.ts:66](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L66)
 
 ___
 
@@ -1205,7 +1205,7 @@ ___
 
 a subet of of elements of the list
 
-Defined in: [src/utility/list.ts:163](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L163)
+Defined in: [src/utility/list.ts:163](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L163)
 
 ___
 
@@ -1243,7 +1243,7 @@ ___
 
 Overrides: Array.from
 
-Defined in: [src/utility/list.ts:15](https://github.com/robbiemu/handy-typescript/blob/af2e72e/src/utility/list.ts#L15)
+Defined in: [src/utility/list.ts:15](https://github.com/robbiemu/handy-typescript/blob/064cc3a/src/utility/list.ts#L15)
 
 ___
 

@@ -38,7 +38,7 @@
 
 **Returns:** [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
 
-Defined in: [src/utility/between-builder.ts:7](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/between-builder.ts#L7)
+Defined in: [src/utility/between-builder.ts:7](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/between-builder.ts#L7)
 
 ## Properties
 
@@ -46,7 +46,7 @@ Defined in: [src/utility/between-builder.ts:7](https://github.com/robbiemu/handy
 
 • **bounds**: [*List*](utility_list.list.md)<unknown\>
 
-Defined in: [src/utility/between-builder.ts:7](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/between-builder.ts#L7)
+Defined in: [src/utility/between-builder.ts:7](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/between-builder.ts#L7)
 
 ## Methods
 
@@ -62,7 +62,7 @@ Defined in: [src/utility/between-builder.ts:7](https://github.com/robbiemu/handy
 
 **Returns:** *any*
 
-Defined in: [src/utility/between-builder.ts:32](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/between-builder.ts#L32)
+Defined in: [src/utility/between-builder.ts:32](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/between-builder.ts#L32)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 **Returns:** [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
 
-Defined in: [src/utility/between-builder.ts:39](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/between-builder.ts#L39)
+Defined in: [src/utility/between-builder.ts:39](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/between-builder.ts#L39)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 **Returns:** [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
 
-Defined in: [src/utility/between-builder.ts:45](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/between-builder.ts#L45)
+Defined in: [src/utility/between-builder.ts:45](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/between-builder.ts#L45)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/utility/between-builder.ts:21](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/between-builder.ts#L21)
+Defined in: [src/utility/between-builder.ts:21](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/between-builder.ts#L21)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 **Returns:** [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
 
-Defined in: [src/utility/between-builder.ts:17](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/between-builder.ts#L17)
+Defined in: [src/utility/between-builder.ts:17](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/between-builder.ts#L17)
 
 ___
 
@@ -135,4 +135,4 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/utility/between-builder.ts:26](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/between-builder.ts#L26)
+Defined in: [src/utility/between-builder.ts:26](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/between-builder.ts#L26)

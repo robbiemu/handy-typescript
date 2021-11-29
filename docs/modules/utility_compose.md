@@ -28,4 +28,4 @@
 
 a function taht will call each fn in turn
 
-Defined in: [src/utility/compose.ts:7](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/compose.ts#L7)
+Defined in: [src/utility/compose.ts:7](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/compose.ts#L7)

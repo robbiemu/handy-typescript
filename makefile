@@ -1,18 +1,24 @@
-ttsc=node_modules/.bin/ttsc
-tsc-alias=node_modules/.bin/tsc-alias
+TTSC=node_modules/.bin/ttsc
+TALIAS=node_modules/.bin/tsc-alias
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Linux)
+	POSIX_REGEX=-E
+else
+	POSIX_REGEX=-regextype posix-extended
+endif
 
 
 all: build postbuild
 
 build: index.ts
-	$(ttsc)
+	$(TTSC)
 
 index.ts:
-	(cd src && find -E . -type f -name *.ts -not \( -regex '.*(spec|test|mock).*' \) | sed 's/\.[^.]*$$//' | grep -v './index' | awk -f ../export.awk > index.ts)
+	(cd src && find $(POSIX_REGEX) . -type f -name *.ts -not \( -regex '.*(spec|test|mock).*' \) | sed 's/\.[^.]*$$//' | grep -v './index' | awk -f ../export.awk > index.ts)
 
 postbuild:
 	rm src/index.ts
-	$(tsc-alias) -p tsconfig.json
+	$(TALIAS) -p tsconfig.json
 
 clean:
 	rm src/index.ts

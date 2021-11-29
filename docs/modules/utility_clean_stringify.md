@@ -27,7 +27,7 @@ stringify possibly circular references
 
 json-like string without circular references
 
-Defined in: [src/utility/clean-stringify.ts:8](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/clean-stringify.ts#L8)
+Defined in: [src/utility/clean-stringify.ts:8](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/clean-stringify.ts#L8)
 
 ___
 
@@ -48,4 +48,4 @@ recursive function to build a copy of an object with '###_Circular_###' replacin
 
 copy of an object without circular references
 
-Defined in: [src/utility/clean-stringify.ts:21](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/clean-stringify.ts#L21)
+Defined in: [src/utility/clean-stringify.ts:21](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/clean-stringify.ts#L21)

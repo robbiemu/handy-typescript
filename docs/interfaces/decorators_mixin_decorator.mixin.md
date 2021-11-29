@@ -46,4 +46,4 @@ example:
 
 • `Optional` **postConstructor**: Function[]
 
-Defined in: [src/decorators/mixin.decorator.ts:22](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/decorators/mixin.decorator.ts#L22)
+Defined in: [src/decorators/mixin.decorator.ts:22](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/decorators/mixin.decorator.ts#L22)

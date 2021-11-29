@@ -21,7 +21,7 @@ the config interface
 
 compile-time function that can replace the underlying method
 
-Defined in: [src/decorators/dummyable.decorator.ts:63](https://github.com/robbiemu/handy-typescript/blob/53f59f0/src/decorators/dummyable.decorator.ts#L63)
+Defined in: [src/decorators/dummyable.decorator.ts:63](https://github.com/robbiemu/handy-typescript/blob/1ebcc03/src/decorators/dummyable.decorator.ts#L63)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 conpile-time property to determine execution of dummyable vs the underlying method
 
-Defined in: [src/decorators/dummyable.decorator.ts:57](https://github.com/robbiemu/handy-typescript/blob/53f59f0/src/decorators/dummyable.decorator.ts#L57)
+Defined in: [src/decorators/dummyable.decorator.ts:57](https://github.com/robbiemu/handy-typescript/blob/1ebcc03/src/decorators/dummyable.decorator.ts#L57)

@@ -2,7 +2,7 @@ TTSC=node_modules/.bin/ttsc
 TALIAS=node_modules/.bin/tsc-alias
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Linux)
-	POSIX_REGEX=-regextype posix-extended
+	POSIX_REGEX=--regextype posix-extended
 else
 	POSIX_REGEX=-E
 endif

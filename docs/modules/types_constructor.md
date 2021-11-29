@@ -21,7 +21,7 @@
 
 Constructor - a Class
 
-Defined in: [src/types/constructor.ts:4](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/types/constructor.ts#L4)
+Defined in: [src/types/constructor.ts:4](https://github.com/robbiemu/handy-typescript/blob/0ef0b5c/src/types/constructor.ts#L4)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Type declaration
 
-Defined in: [src/types/constructor.ts:5](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/types/constructor.ts#L5)
+Defined in: [src/types/constructor.ts:5](https://github.com/robbiemu/handy-typescript/blob/0ef0b5c/src/types/constructor.ts#L5)

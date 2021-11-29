@@ -4,7 +4,6 @@
   "description": "a collection of tools I use in typescript",
   "main": "dist/index.js",
   "scripts": {
-    "prepublish": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "prepare": "husky install",
     "build": "make",

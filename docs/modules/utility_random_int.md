@@ -23,4 +23,4 @@
 
 **Returns:** *number*
 
-Defined in: [src/utility/random-int.ts:2](https://github.com/robbiemu/handy-typescript/blob/1ebcc03/src/utility/random-int.ts#L2)
+Defined in: [src/utility/random-int.ts:2](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/random-int.ts#L2)

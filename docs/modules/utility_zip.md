@@ -42,4 +42,4 @@ TODO -- WHAT return type is this?
 | `[Symbol.iterator]` | () => *any* |
 | `next` | () => { `done`: *undefined* = true; `value`: *any*[]  } \| { `done`: *boolean* = true; `value`: *undefined*  } |
 
-Defined in: [src/utility/zip.ts:17](https://github.com/robbiemu/handy-typescript/blob/1ebcc03/src/utility/zip.ts#L17)
+Defined in: [src/utility/zip.ts:17](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/zip.ts#L17)

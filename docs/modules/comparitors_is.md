@@ -28,4 +28,4 @@
 
 a comparator that returns true if the input object is equal to the pattern
 
-Defined in: [src/comparitors/is.ts:8](https://github.com/robbiemu/handy-typescript/blob/3eaf458/src/comparitors/is.ts#L8)
+Defined in: [src/comparitors/is.ts:8](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/comparitors/is.ts#L8)

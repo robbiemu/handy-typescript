@@ -1,6 +1,6 @@
 {
   "name": "handy-typescript",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a collection of tools I use in typescript",
   "main": "dist/index.js",
   "scripts": {

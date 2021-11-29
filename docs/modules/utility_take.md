@@ -29,4 +29,4 @@
 
 **Returns:** *IterableIterator*<T\>
 
-Defined in: [src/utility/take.ts:1](https://github.com/robbiemu/handy-typescript/blob/3eaf458/src/utility/take.ts#L1)
+Defined in: [src/utility/take.ts:1](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/utility/take.ts#L1)

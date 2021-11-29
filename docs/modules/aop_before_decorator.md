@@ -28,4 +28,4 @@
 
 **Returns:** (`_targetClass`: *Partial*<(...`args`: *any*[]) => *any*\>, `_propertyKey`: *string* \| *symbol*, `descriptor`: PropertyDescriptor) => PropertyDescriptor
 
-Defined in: [src/aop/before.decorator.ts:9](https://github.com/robbiemu/handy-typescript/blob/3eaf458/src/aop/before.decorator.ts#L9)
+Defined in: [src/aop/before.decorator.ts:9](https://github.com/robbiemu/handy-typescript/blob/5f4327e/src/aop/before.decorator.ts#L9)

@@ -54,7 +54,7 @@
 
 the key
 
-Defined in: [src/utility/entry.ts:15](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/entry.ts#L15)
+Defined in: [src/utility/entry.ts:15](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/entry.ts#L15)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 helper args to the reduce function which produces the max key according to the greater-than operator on the transformed entry
 
-Defined in: [src/utility/entry.ts:35](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/entry.ts#L35)
+Defined in: [src/utility/entry.ts:35](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/entry.ts#L35)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 helper args to the reduce function which produces all maximal keys according to the greater-than operator on the transformed entry
 
-Defined in: [src/utility/entry.ts:59](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/entry.ts#L59)
+Defined in: [src/utility/entry.ts:59](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/entry.ts#L59)
 
 ___
 
@@ -141,4 +141,4 @@ ___
 
 the value
 
-Defined in: [src/utility/entry.ts:25](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/entry.ts#L25)
+Defined in: [src/utility/entry.ts:25](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/entry.ts#L25)

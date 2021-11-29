@@ -24,4 +24,4 @@ comparitor to find numeric values
 
 **Returns:** *boolean*
 
-Defined in: [src/comparitors/is-numeric.ts:6](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/comparitors/is-numeric.ts#L6)
+Defined in: [src/comparitors/is-numeric.ts:6](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/comparitors/is-numeric.ts#L6)

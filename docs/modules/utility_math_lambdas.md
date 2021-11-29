@@ -32,7 +32,7 @@
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:7](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/math-lambdas.ts#L7)
+Defined in: [src/utility/math-lambdas.ts:7](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/math-lambdas.ts#L7)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 an array of k-lemngth choices from the set
 
-Defined in: [src/utility/math-lambdas.ts:29](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/math-lambdas.ts#L29)
+Defined in: [src/utility/math-lambdas.ts:29](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/math-lambdas.ts#L29)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 **Returns:** *Map*<T, number\>
 
-Defined in: [src/utility/math-lambdas.ts:1](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/math-lambdas.ts#L1)
+Defined in: [src/utility/math-lambdas.ts:1](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/math-lambdas.ts#L1)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:10](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/math-lambdas.ts#L10)
+Defined in: [src/utility/math-lambdas.ts:10](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/math-lambdas.ts#L10)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:18](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/math-lambdas.ts#L18)
+Defined in: [src/utility/math-lambdas.ts:18](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/math-lambdas.ts#L18)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:11](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/math-lambdas.ts#L11)
+Defined in: [src/utility/math-lambdas.ts:11](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/math-lambdas.ts#L11)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:9](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/math-lambdas.ts#L9)
+Defined in: [src/utility/math-lambdas.ts:9](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/math-lambdas.ts#L9)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:12](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/math-lambdas.ts#L12)
+Defined in: [src/utility/math-lambdas.ts:12](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/math-lambdas.ts#L12)
 
 ___
 
@@ -185,7 +185,7 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:8](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/math-lambdas.ts#L8)
+Defined in: [src/utility/math-lambdas.ts:8](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/math-lambdas.ts#L8)
 
 ___
 
@@ -201,4 +201,4 @@ ___
 
 **Returns:** *number*
 
-Defined in: [src/utility/math-lambdas.ts:14](https://github.com/robbiemu/handy-typescript/blob/84bdd7b/src/utility/math-lambdas.ts#L14)
+Defined in: [src/utility/math-lambdas.ts:14](https://github.com/robbiemu/handy-typescript/blob/29caf49/src/utility/math-lambdas.ts#L14)

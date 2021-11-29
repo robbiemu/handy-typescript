@@ -1,5 +1,7 @@
-import { combinations, range } from '../math-generators'
+import { generators } from '../math-generators'
 import { add, multiply } from '../math-lambdas'
+
+const { combinations, range } = generators
 
 describe('combinations', () => {
   it('should create an iterable that spans an array of combinations of k elements from an n length source', () => {

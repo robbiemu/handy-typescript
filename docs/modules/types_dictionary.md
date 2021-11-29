@@ -24,4 +24,4 @@ Dictionary - key-value pairs
 
 #### Type declaration
 
-Defined in: [types/dictionary.d.ts:5](https://github.com/robbiemu/handy-typescript/blob/02d2b30/types/dictionary.d.ts#L5)
+Defined in: [src/types/dictionary.ts:5](https://github.com/robbiemu/handy-typescript/blob/3eaf458/src/types/dictionary.ts#L5)

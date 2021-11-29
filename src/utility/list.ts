@@ -1,3 +1,4 @@
+import type { Comparator } from '@src/types/arrow-function'
 import { InterruptingBefore } from '@src/aop/interrupting-before.decorator'
 import { Before } from '@src/aop/before.decorator'
 import { Andable } from './andable'

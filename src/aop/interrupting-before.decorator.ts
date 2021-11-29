@@ -1,3 +1,4 @@
+import type { Constructor } from '@src/types/constructor'
 import type { AopDecoratorPayload } from './aop-decorator-payload.interface'
 
 /**

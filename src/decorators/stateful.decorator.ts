@@ -1,3 +1,4 @@
+import type { StrictConstructor } from '@src/types/constructor'
 import { Observable, ReplaySubject } from 'rxjs'
 
 /**

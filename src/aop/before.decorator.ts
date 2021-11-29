@@ -1,3 +1,5 @@
+import type { Constructor } from '@src/types/constructor'
+
 /**
  * @function Before
  * @description decorator to execute code before method execution

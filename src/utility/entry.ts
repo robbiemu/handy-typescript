@@ -1,3 +1,4 @@
+import type { Reducer } from '@src/types/arrow-function'
 import { FixedSizeArray } from './fixed-array-size'
 
 /**

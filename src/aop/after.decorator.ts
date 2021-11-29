@@ -1,3 +1,5 @@
+import type { Constructor } from '@src/types/constructor'
+
 /**
  * decorator execute code _after_ method completes
  * @param afterFunction method to decorate

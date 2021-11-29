@@ -1,3 +1,4 @@
+import type { Dictionary } from '@src/types/dictionary'
 import { cleanStringify } from '@src/utility/clean-stringify'
 
 describe('cleanStringify', () => {

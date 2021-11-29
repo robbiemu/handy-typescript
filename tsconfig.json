@@ -57,8 +57,7 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.json",
-    ".env",
-    "types/**/*.d.ts"
+    ".env"
   ],
   "exclude": [
     "node_modules"

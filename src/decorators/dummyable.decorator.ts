@@ -1,3 +1,5 @@
+import type { Constructor } from '@src/types/constructor'
+
 /**
  * decorator that can replace and reuse a method
  * @param conf DummyableConfig

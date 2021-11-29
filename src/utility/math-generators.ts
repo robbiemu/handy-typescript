@@ -1,6 +1,7 @@
+import type { ArrowFunction } from '@src/types/arrow-function'
 import { isNumber } from '@src/comparitors/is-number'
 
-export function* combinations<T>(
+function* combinations<T>(
   set: Array<T>,
   k: number,
 ): Generator<Array<T>, Array<T>, undefined> {
@@ -21,7 +22,7 @@ export function* combinations<T>(
   }
 }
 
-export function* range(
+function* range(
   first: number,
   last?: number,
   byFn: ArrowFunction<any, number> = (_, i) => i + 1,
@@ -37,3 +38,5 @@ export function* range(
     i += 1
   }
 }
+
+export const generators = { combinations, range }

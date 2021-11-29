@@ -19,4 +19,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - uses: c-hive/gha-npm-cache@v1
     - run: npm install
-    - run: npm run test
+    - run: npm test
+    - run: npm run build

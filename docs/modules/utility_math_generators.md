@@ -21,4 +21,4 @@
 | `combinations` | <T\>(`set`: T[], `k`: *number*) => *Generator*<T[], T[], undefined\> |
 | `range` | (`first`: *number*, `last?`: *number*, `byFn`: [*ArrowFunction*](types_arrow_function.md#arrowfunction)<any, number\>) => *Generator*<number\> |
 
-Defined in: [src/utility/math-generators.ts:42](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/math-generators.ts#L42)
+Defined in: [src/utility/math-generators.ts:42](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/utility/math-generators.ts#L42)

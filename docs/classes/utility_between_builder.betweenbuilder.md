@@ -4,6 +4,8 @@
 
 [utility/between-builder](../modules/utility_between_builder.md).BetweenBuilder
 
+**`description`** general factory helper to populate a generator with a collection of values
+
 ## Table of contents
 
 ### Constructors
@@ -18,7 +20,7 @@
 
 - [and](utility_between_builder.betweenbuilder.md#and)
 - [between](utility_between_builder.betweenbuilder.md#between)
-- [betweenBounds](utility_between_builder.betweenbuilder.md#betweenbounds)
+- [setBounds](utility_between_builder.betweenbuilder.md#setbounds)
 - [assertBeforeWithInitialValue](utility_between_builder.betweenbuilder.md#assertbeforewithinitialvalue)
 - [build](utility_between_builder.betweenbuilder.md#build)
 - [completeBefore](utility_between_builder.betweenbuilder.md#completebefore)
@@ -38,7 +40,7 @@
 
 **Returns:** [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
 
-Defined in: [src/utility/between-builder.ts:7](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/between-builder.ts#L7)
+Defined in: [src/utility/between-builder.ts:11](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/utility/between-builder.ts#L11)
 
 ## Properties
 
@@ -46,13 +48,17 @@ Defined in: [src/utility/between-builder.ts:7](https://github.com/robbiemu/handy
 
 • **bounds**: [*List*](utility_list.list.md)<unknown\>
 
-Defined in: [src/utility/between-builder.ts:7](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/between-builder.ts#L7)
+Defined in: [src/utility/between-builder.ts:11](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/utility/between-builder.ts#L11)
 
 ## Methods
 
 ### and
 
 ▸ **and**(`value`: *unknown*): *any*
+
+**`method`** and
+
+**`description`** add a bound to the collection of bounds, optionally completing the factory setup by executing the generator function
 
 #### Parameters
 
@@ -62,13 +68,19 @@ Defined in: [src/utility/between-builder.ts:7](https://github.com/robbiemu/handy
 
 **Returns:** *any*
 
-Defined in: [src/utility/between-builder.ts:32](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/between-builder.ts#L32)
+either this BetweenBuilder or the result of the generator function if all bounds have been collected
+
+Defined in: [src/utility/between-builder.ts:52](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/utility/between-builder.ts#L52)
 
 ___
 
 ### between
 
 ▸ **between**(`value`: *unknown*): [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
+
+**`method`** between
+
+**`description`** add a bound to the collection of bounds, optionally completing the factory setup by executing the generator function
 
 #### Parameters
 
@@ -78,13 +90,19 @@ ___
 
 **Returns:** [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
 
-Defined in: [src/utility/between-builder.ts:39](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/between-builder.ts#L39)
+either this BetweenBuilder or the result of the generator function if all bounds have been collected
+
+Defined in: [src/utility/between-builder.ts:65](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/utility/between-builder.ts#L65)
 
 ___
 
-### betweenBounds
+### setBounds
 
-▸ **betweenBounds**(`bounds`: *unknown*[]): [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
+▸ **setBounds**(`bounds`: *unknown*[]): [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
+
+**`method`** bounds
+
+**`description`** add bounds to the collection of bounds, optionally completing the factory setup by executing the generator function
 
 #### Parameters
 
@@ -94,7 +112,9 @@ ___
 
 **Returns:** [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
 
-Defined in: [src/utility/between-builder.ts:45](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/between-builder.ts#L45)
+either this BetweenBuilder or the result of the generator function if all bounds have been collected
+
+Defined in: [src/utility/between-builder.ts:77](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/utility/between-builder.ts#L77)
 
 ___
 
@@ -102,9 +122,15 @@ ___
 
 ▸ `Static` **assertBeforeWithInitialValue**(): *void*
 
+**`static`**
+
+**`method`** assertBeforeWithInitialValue
+
+**`description`** static psuedo-private method used in decorator to assert that the method is called after setting an initial value
+
 **Returns:** *void*
 
-Defined in: [src/utility/between-builder.ts:21](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/between-builder.ts#L21)
+Defined in: [src/utility/between-builder.ts:30](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/utility/between-builder.ts#L30)
 
 ___
 
@@ -125,7 +151,7 @@ ___
 
 **Returns:** [*BetweenBuilder*](utility_between_builder.betweenbuilder.md)
 
-Defined in: [src/utility/between-builder.ts:17](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/between-builder.ts#L17)
+Defined in: [src/utility/between-builder.ts:21](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/utility/between-builder.ts#L21)
 
 ___
 
@@ -133,6 +159,12 @@ ___
 
 ▸ `Static` **completeBefore**(): *void*
 
+**`static`**
+
+**`method`** completeBefore
+
+**`description`** static psuedo-private method used in decorator to detect completion of setting the first value, deleting the between method
+
 **Returns:** *void*
 
-Defined in: [src/utility/between-builder.ts:26](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/utility/between-builder.ts#L26)
+Defined in: [src/utility/between-builder.ts:40](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/utility/between-builder.ts#L40)

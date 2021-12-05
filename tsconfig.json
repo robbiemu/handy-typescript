@@ -60,6 +60,12 @@
     ".env"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "specs?",
+    "tests?",
+    "mocks?",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.mock.ts"
   ]
 }

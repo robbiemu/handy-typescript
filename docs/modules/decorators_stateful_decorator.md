@@ -27,7 +27,7 @@
 
 **Returns:** ClassDecorator
 
-Defined in: [src/decorators/stateful.decorator.ts:27](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/decorators/stateful.decorator.ts#L27)
+Defined in: [src/decorators/stateful.decorator.ts:27](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/decorators/stateful.decorator.ts#L27)
 
 ___
 
@@ -43,4 +43,4 @@ ___
 
 **Returns:** () => *void*
 
-Defined in: [src/decorators/stateful.decorator.ts:43](https://github.com/robbiemu/handy-typescript/blob/36c23cf/src/decorators/stateful.decorator.ts#L43)
+Defined in: [src/decorators/stateful.decorator.ts:43](https://github.com/robbiemu/handy-typescript/blob/9919eaf/src/decorators/stateful.decorator.ts#L43)

@@ -22,8 +22,8 @@ jobs:
           node-version: 19
           registry-url: https://npm.pkg.github.com/
       - run: npm install
-        working-directory: ./src
+        working-directory: .
       - run: npm publish 
-        working-directory: ./src
+        working-directory: .
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

@@ -1,0 +1,29 @@
+name: Publish hello-world NPM Package
+
+on:
+  push:
+    branches: [ main ]
+  release:
+    types: [created]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  publish-gpr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 19
+          registry-url: https://npm.pkg.github.com/
+      - run: npm install
+        working-directory: ./src
+      - run: npm publish 
+        working-directory: ./src
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

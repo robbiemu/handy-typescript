@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/utility/andable.ts:4](https://github.com/robbiemu/handy-typescript/blob/2b4364d/src/utility/andable.ts#L4)
+[src/utility/andable.ts:4](https://github.com/robbiemu/handy-typescript/blob/81cc3ca/src/utility/andable.ts#L4)
 
 ## Methods
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[src/utility/andable.ts:28](https://github.com/robbiemu/handy-typescript/blob/2b4364d/src/utility/andable.ts#L28)
+[src/utility/andable.ts:28](https://github.com/robbiemu/handy-typescript/blob/81cc3ca/src/utility/andable.ts#L28)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[src/utility/andable.ts:13](https://github.com/robbiemu/handy-typescript/blob/2b4364d/src/utility/andable.ts#L13)
+[src/utility/andable.ts:13](https://github.com/robbiemu/handy-typescript/blob/81cc3ca/src/utility/andable.ts#L13)

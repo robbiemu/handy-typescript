@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm test && npm run lint-staged",
     "prepare": "npm run build && husky install",
     "build": "make",
     "pretest": "jest --clearCache",

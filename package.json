@@ -19,17 +19,14 @@
   ],
   "author": "Robert Collins <roberto.tomas.cuentas@gmail.com>",
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "md5": "^2.3.0",
     "priorityqueue": "^1.0.0",
-    "rxjs": "^6.6.7",
-    "ts-node": "^9.1.1",
+    "rxjs": "^6.6.7"
+  },
+  "peerDependencies": {
     "ts-transformer-keys": "^0.4.4",
-    "tsc-alias": "^1.8.2",
-    "tsconfig-paths": "^3.14.1",
     "ttypescript": "^1.5.15",
-    "typedoc": "^0.23.24",
-    "typedoc-plugin-markdown": "^3.14.0",
     "typescript": "^4.9.4"
   },
   "devDependencies": {

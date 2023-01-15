@@ -21,7 +21,7 @@ compile-time function that can replace the underlying method
 
 #### Defined in
 
-[src/decorators/dummyable.decorator.ts:63](https://github.com/robbiemu/handy-typescript/blob/f9cc56a/src/decorators/dummyable.decorator.ts#L63)
+[src/decorators/dummyable.decorator.ts:63](https://github.com/robbiemu/handy-typescript/blob/400192d/src/decorators/dummyable.decorator.ts#L63)
 
 ___
 
@@ -33,4 +33,4 @@ conpile-time property to determine execution of dummyable vs the underlying meth
 
 #### Defined in
 
-[src/decorators/dummyable.decorator.ts:57](https://github.com/robbiemu/handy-typescript/blob/f9cc56a/src/decorators/dummyable.decorator.ts#L57)
+[src/decorators/dummyable.decorator.ts:57](https://github.com/robbiemu/handy-typescript/blob/400192d/src/decorators/dummyable.decorator.ts#L57)

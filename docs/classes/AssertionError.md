@@ -1,4 +1,4 @@
-[handy-typescript](../README.md) / [Modules](../modules.md) / AssertionError
+[@robbiemu/handy-typescript](../README.md) / [Modules](../modules.md) / AssertionError
 
 # Class: AssertionError
 

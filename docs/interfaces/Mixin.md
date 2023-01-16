@@ -1,4 +1,4 @@
-[handy-typescript](../README.md) / [Modules](../modules.md) / Mixin
+[@robbiemu/handy-typescript](../README.md) / [Modules](../modules.md) / Mixin
 
 # Interface: Mixin
 
@@ -48,4 +48,4 @@ classes to mix in to the decorated class
 
 #### Defined in
 
-[src/decorators/mixin.decorator.ts:22](https://github.com/robbiemu/handy-typescript/blob/81cc3ca/src/decorators/mixin.decorator.ts#L22)
+[src/decorators/mixin.decorator.ts:22](https://github.com/robbiemu/handy-typescript/blob/3b5a4e9/src/decorators/mixin.decorator.ts#L22)

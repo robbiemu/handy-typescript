@@ -1,4 +1,4 @@
-[handy-typescript](../README.md) / [Modules](../modules.md) / Stateful
+[@robbiemu/handy-typescript](../README.md) / [Modules](../modules.md) / Stateful
 
 # Interface: Stateful<T\>
 
@@ -32,4 +32,4 @@
 
 #### Defined in
 
-[src/decorators/stateful.decorator.ts:24](https://github.com/robbiemu/handy-typescript/blob/81cc3ca/src/decorators/stateful.decorator.ts#L24)
+[src/decorators/stateful.decorator.ts:24](https://github.com/robbiemu/handy-typescript/blob/3b5a4e9/src/decorators/stateful.decorator.ts#L24)

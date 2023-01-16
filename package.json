@@ -1,7 +1,11 @@
 {
-  "name": "handy-typescript",
-  "version": "4.9.4",
+  "name": "@robbiemu/handy-typescript",
+  "version": "4.9.5",
   "description": "a collection of tools I use in typescript",
+  "repository": "git://github.com/robbiemu/handy-typescript.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -58,8 +62,5 @@
   },
   "files": [
     "/dist"
-  ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  ]
 }

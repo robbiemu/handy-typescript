@@ -149,7 +149,10 @@ describe('List', () => {
 
   it('should produce a map of contents to count', () => {
     let numbers = List.from([0, 1, 1, 2, 2, 3, 3, 3, 4, 4])
-    expect(Object.fromEntries(numbers.count().entries())).toEqual({
+    const count = numbers.count()
+    expect(count instanceof Map).toBeTruthy()
+
+    expect(Object.fromEntries(count.entries())).toEqual({
       0: 1,
       1: 2,
       2: 2,
@@ -211,11 +214,9 @@ describe('List', () => {
 
   it('should produce all elements between x and y values (based on comparability)', () => {
     const numbers = List.from([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-    expect(numbers.between(1).and(3)).toEqual([1, 2, 3])
     expect(numbers.between(1, 3)).toEqual([1, 2, 3])
 
     const strings = List.from(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'])
-    expect(strings.between('b').and('f')).toEqual(['b', 'c', 'd', 'e', 'f'])
     expect(strings.between('b', 'f')).toEqual(['b', 'c', 'd', 'e', 'f'])
   })
 

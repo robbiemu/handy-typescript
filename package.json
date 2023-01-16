@@ -1,6 +1,6 @@
 {
   "name": "@robbiemu/handy-typescript",
-  "version": "4.9.5",
+  "version": "4.9.6",
   "description": "a collection of tools I use in typescript",
   "repository": "git://github.com/robbiemu/handy-typescript.git",
   "publishConfig": {

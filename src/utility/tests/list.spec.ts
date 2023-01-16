@@ -149,7 +149,10 @@ describe('List', () => {
 
   it('should produce a map of contents to count', () => {
     let numbers = List.from([0, 1, 1, 2, 2, 3, 3, 3, 4, 4])
-    expect(Object.fromEntries(numbers.count().entries())).toEqual({
+    const count = numbers.count()
+    expect(count instanceof Map).toBeTruthy()
+
+    expect(Object.fromEntries(count.entries())).toEqual({
       0: 1,
       1: 2,
       2: 2,

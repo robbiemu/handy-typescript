@@ -1,3 +1,4 @@
+import { ArrowFunction } from '@src/types/arrow-function'
 import { isDefined } from './is-defined'
 
 /**
@@ -12,8 +13,11 @@ import { isDefined } from './is-defined'
  * @param evaluator that is called in the comparator, on the property, to determine the matching of the value
  * @returns comparator
  */
-export function factoryHasValue(property: string, evaluator: Function = isDefined) {
+export function factoryHasValue(
+  property: string,
+  evaluator: Function = isDefined,
+): ArrowFunction<unknown[], boolean> {
   return function (value: { [prop: string]: any }): boolean {
     return value?.[property] ? evaluator(value?.[property]) : false
-  }
+  } as ArrowFunction<unknown[], boolean>
 }

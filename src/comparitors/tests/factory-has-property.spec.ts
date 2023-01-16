@@ -1,3 +1,4 @@
+import type { ArrowFunction } from '../../types/arrow-function'
 import { factoryHasProperty } from '../factory-has-property'
 
 describe('factoryHasProperty', () => {
@@ -19,7 +20,8 @@ describe('factoryHasProperty', () => {
   it('should gracefully handle non-object entities', () => {
     const cases: Array<unknown> = [undefined, NaN, 1, 't', 0xbb]
 
-    const hasPropB = factoryHasProperty('b')
+    // eslint-disable-next-line prettier/prettier
+    const hasPropB = factoryHasProperty('b') as ArrowFunction<unknown[],boolean>
 
     expect(() => cases.some(hasPropB)).not.toThrow()
     expect(cases.some(hasPropB)).toBeFalsy()

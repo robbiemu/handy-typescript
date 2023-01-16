@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { After } from '../after.decorator'
 
 describe('AfterDecorator', () => {
   it('should modify a method to execute a function after the method', () => {
-    let returnValue: boolean
+    let returnValue!: boolean
     class FooBar {
       @After(() => (returnValue = true))
       bang() {
@@ -16,8 +17,8 @@ describe('AfterDecorator', () => {
   })
 
   it('should have access to the parameters', () => {
-    let returnValue: boolean
-    let originalMethodValue: boolean
+    let returnValue!: boolean
+    let originalMethodValue!: boolean
 
     class AccessParameters {
       @After((value: boolean) => (returnValue = value))

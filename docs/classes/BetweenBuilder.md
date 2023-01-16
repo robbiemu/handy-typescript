@@ -42,7 +42,7 @@ general factory helper to populate a generator with a collection of values
 
 #### Defined in
 
-[src/utility/between-builder.ts:13](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/utility/between-builder.ts#L13)
+[src/utility/between-builder.ts:14](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/utility/between-builder.ts#L14)
 
 ## Properties
 
@@ -52,7 +52,7 @@ general factory helper to populate a generator with a collection of values
 
 #### Defined in
 
-[src/utility/between-builder.ts:13](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/utility/between-builder.ts#L13)
+[src/utility/between-builder.ts:14](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/utility/between-builder.ts#L14)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[src/utility/between-builder.ts:11](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/utility/between-builder.ts#L11)
+[src/utility/between-builder.ts:12](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/utility/between-builder.ts#L12)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/utility/between-builder.ts:13](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/utility/between-builder.ts#L13)
+[src/utility/between-builder.ts:14](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/utility/between-builder.ts#L14)
 
 ## Methods
 
@@ -103,7 +103,7 @@ either this BetweenBuilder or the result of the generator function if all bounds
 
 #### Defined in
 
-[src/utility/between-builder.ts:50](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/utility/between-builder.ts#L50)
+[src/utility/between-builder.ts:52](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/utility/between-builder.ts#L52)
 
 ___
 
@@ -133,7 +133,7 @@ either this BetweenBuilder or the result of the generator function if all bounds
 
 #### Defined in
 
-[src/utility/between-builder.ts:64](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/utility/between-builder.ts#L64)
+[src/utility/between-builder.ts:65](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/utility/between-builder.ts#L65)
 
 ___
 
@@ -163,7 +163,7 @@ either this BetweenBuilder or the result of the generator function if all bounds
 
 #### Defined in
 
-[src/utility/between-builder.ts:77](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/utility/between-builder.ts#L77)
+[src/utility/between-builder.ts:78](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/utility/between-builder.ts#L78)
 
 ___
 
@@ -193,7 +193,7 @@ static psuedo-private method used in decorator to assert that the method is call
 
 #### Defined in
 
-[src/utility/between-builder.ts:30](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/utility/between-builder.ts#L30)
+[src/utility/between-builder.ts:31](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/utility/between-builder.ts#L31)
 
 ___
 
@@ -220,7 +220,7 @@ build
 
 #### Defined in
 
-[src/utility/between-builder.ts:21](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/utility/between-builder.ts#L21)
+[src/utility/between-builder.ts:22](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/utility/between-builder.ts#L22)
 
 ___
 
@@ -250,4 +250,4 @@ static psuedo-private method used in decorator to detect completion of setting t
 
 #### Defined in
 
-[src/utility/between-builder.ts:39](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/utility/between-builder.ts#L39)
+[src/utility/between-builder.ts:40](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/utility/between-builder.ts#L40)

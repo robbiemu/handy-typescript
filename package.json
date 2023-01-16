@@ -9,13 +9,15 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublishOnly": "npm test && npm run lint-staged",
+    "prepublishOnly": "npm test && npm run lint",
     "prepare": "npm run build && husky install",
     "build": "make",
     "pretest": "jest --clearCache",
     "test": "jest",
     "doc": "typedoc",
     "postdoc": "git add -A docs",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
     "lint-staged": "lint-staged"
   },
   "keywords": [

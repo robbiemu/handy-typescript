@@ -1,4 +1,4 @@
-name: Publish hello-world NPM Package
+name: Publish handy-typescript Github NPM Package
 
 on:
   push:

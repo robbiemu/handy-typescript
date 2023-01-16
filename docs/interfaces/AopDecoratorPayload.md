@@ -1,4 +1,4 @@
-[handy-typescript](../README.md) / [Modules](../modules.md) / AopDecoratorPayload
+[@robbiemu/handy-typescript](../README.md) / [Modules](../modules.md) / AopDecoratorPayload
 
 # Interface: AopDecoratorPayload
 
@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/aop/aop-decorator-payload.interface.ts:2](https://github.com/robbiemu/handy-typescript/blob/81cc3ca/src/aop/aop-decorator-payload.interface.ts#L2)
+[src/aop/aop-decorator-payload.interface.ts:2](https://github.com/robbiemu/handy-typescript/blob/3b5a4e9/src/aop/aop-decorator-payload.interface.ts#L2)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/aop/aop-decorator-payload.interface.ts:3](https://github.com/robbiemu/handy-typescript/blob/81cc3ca/src/aop/aop-decorator-payload.interface.ts#L3)
+[src/aop/aop-decorator-payload.interface.ts:3](https://github.com/robbiemu/handy-typescript/blob/3b5a4e9/src/aop/aop-decorator-payload.interface.ts#L3)

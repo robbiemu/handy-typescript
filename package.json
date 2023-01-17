@@ -17,7 +17,7 @@
     "pretest": "jest --clearCache",
     "test": "jest",
     "doc": "typedoc",
-    "postdoc": "git add -A docs",
+    "postdoc": "cp _config.yml docs/ && git add -A docs",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
     "lint-staged": "lint-staged"

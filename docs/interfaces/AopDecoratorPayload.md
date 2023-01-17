@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/aop/aop-decorator-payload.interface.ts:2](https://github.com/robbiemu/handy-typescript/blob/b968df4/src/aop/aop-decorator-payload.interface.ts#L2)
+[src/aop/aop-decorator-payload.interface.ts:2](https://github.com/robbiemu/handy-typescript/blob/0cbae8f/src/aop/aop-decorator-payload.interface.ts#L2)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/aop/aop-decorator-payload.interface.ts:3](https://github.com/robbiemu/handy-typescript/blob/b968df4/src/aop/aop-decorator-payload.interface.ts#L3)
+[src/aop/aop-decorator-payload.interface.ts:3](https://github.com/robbiemu/handy-typescript/blob/0cbae8f/src/aop/aop-decorator-payload.interface.ts#L3)

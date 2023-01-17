@@ -52,7 +52,8 @@
       "**/tests/*",
       "**/mock/*"
     ],
-    "out": "docs"
+    "out": "docs",
+    "githubPages": false
   },
   "include": [
     "src/**/*.ts",

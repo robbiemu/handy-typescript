@@ -27,7 +27,7 @@
     "paths": {
       "@src/*": [
         "*"
-      ],
+      ]
     },
     "plugins": [
       {
@@ -50,7 +50,7 @@
     "exclude": [
       "**/*.(spec|test|mock).ts",
       "**/tests/*",
-      "**/mock/*",
+      "**/mock/*"
     ],
     "out": "docs"
   },
@@ -60,12 +60,6 @@
     ".env"
   ],
   "exclude": [
-    "node_modules",
-    "specs?",
-    "tests?",
-    "mocks?",
-    "**/*.spec.ts",
-    "**/*.test.ts",
-    "**/*.mock.ts"
+    "node_modules"
   ]
 }

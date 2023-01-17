@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { After } from '@src/aop/after.decorator'
 import { emitPropertyChange, Stateful } from '../stateful.decorator'
 

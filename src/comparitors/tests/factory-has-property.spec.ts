@@ -1,4 +1,4 @@
-import type { ArrowFunction } from '../../types/arrow-function'
+import type { ArrowFunction } from '@src/types/arrow-function'
 import { factoryHasProperty } from '../factory-has-property'
 
 describe('factoryHasProperty', () => {

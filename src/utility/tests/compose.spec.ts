@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Before } from '@src/aop/before.decorator'
 import { compose } from '../compose'
 

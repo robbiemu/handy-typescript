@@ -48,4 +48,4 @@ classes to mix in to the decorated class
 
 #### Defined in
 
-[src/decorators/mixin.decorator.ts:22](https://github.com/robbiemu/handy-typescript/blob/c3df21b/src/decorators/mixin.decorator.ts#L22)
+[src/decorators/mixin.decorator.ts:22](https://github.com/robbiemu/handy-typescript/blob/b5caf77/src/decorators/mixin.decorator.ts#L22)

@@ -2,6 +2,8 @@
   "name": "@robbiemu/handy-typescript",
   "version": "4.9.6",
   "description": "a collection of tools I use in typescript",
+  "author": "Robert Collins <roberto.tomas.cuentas@gmail.com>",
+  "license": "MIT",
   "repository": "git://github.com/robbiemu/handy-typescript.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -23,8 +25,6 @@
   "keywords": [
     "typescript"
   ],
-  "author": "Robert Collins <roberto.tomas.cuentas@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "md5": "^2.3.0",
     "priorityqueue": "^1.0.0",

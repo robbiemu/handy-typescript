@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[src/types/constructor.ts:10](https://github.com/robbiemu/handy-typescript/blob/e38f594/src/types/constructor.ts#L10)
+[src/types/constructor.ts:10](https://github.com/robbiemu/handy-typescript/blob/5745691/src/types/constructor.ts#L10)

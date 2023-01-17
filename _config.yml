@@ -1,5 +1,5 @@
 # Site settings
-title: @robbiemu/handy-typescript
+title: "@robbiemu/handy-typescript"
 baseurl: "/docs"
 
 # Build settings

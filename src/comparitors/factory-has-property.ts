@@ -1,3 +1,5 @@
+import type { ArrowFunction } from '@src/types/arrow-function'
+
 /**
  * generate a comparator that looks for existance of a property
  * example:
@@ -9,9 +11,11 @@
  * @param property that is required on the comparator
  * @returns comparator
  */
-export function factoryHasProperty(property: string) {
+export function factoryHasProperty(
+  property: string,
+): ArrowFunction<unknown[], boolean> {
   return function (value: { [prop: string]: any }): boolean {
     // eslint-disable-next-line no-prototype-builtins
     return value?.hasOwnProperty?.(property)
-  }
+  } as ArrowFunction<unknown[], boolean>
 }

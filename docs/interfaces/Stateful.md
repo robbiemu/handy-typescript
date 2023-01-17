@@ -32,4 +32,4 @@
 
 #### Defined in
 
-[src/decorators/stateful.decorator.ts:24](https://github.com/robbiemu/handy-typescript/blob/61b869d/src/decorators/stateful.decorator.ts#L24)
+[src/decorators/stateful.decorator.ts:24](https://github.com/robbiemu/handy-typescript/blob/b5caf77/src/decorators/stateful.decorator.ts#L24)

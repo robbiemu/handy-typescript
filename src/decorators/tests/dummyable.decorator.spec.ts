@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-empty-function */
 
-import { DummyableFactoryResponse } from '../dummyable.decorator'
+import type { DummyableFactoryResponse } from '../dummyable.decorator'
 import { Dummyable } from '../dummyable.decorator'
 
 describe('Dummyable', () => {

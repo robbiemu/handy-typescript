@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { After } from '@src/aop/after.decorator'
 import { Before } from '@src/aop/before.decorator'
 import { assert } from './assert'
@@ -47,8 +48,8 @@ export class BetweenBuilder {
    * @returns either this BetweenBuilder or the result of the generator function if all bounds have been collected
    * @description add a bound to the collection of bounds, optionally completing the factory setup by executing the generator function
    */
-  @Before(BetweenBuilder.assertBeforeWithInitialValue)
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+  @Before(BetweenBuilder.assertBeforeWithInitialValue)
   and(this: BetweenBuilder, value: unknown) {
     this.bounds.push(value)
 

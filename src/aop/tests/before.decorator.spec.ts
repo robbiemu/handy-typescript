@@ -1,4 +1,5 @@
 import { Watcher } from './watcher.mock'
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Before } from '../before.decorator'
 
 describe('BeforeDecorator', () => {
@@ -11,7 +12,7 @@ describe('BeforeDecorator', () => {
   it('should modify a method to execute a function before the method', () => {
     jest.spyOn(watcher, 'observe')
 
-    let sentinel: boolean
+    let sentinel!: boolean
 
     function testFunction() {
       watcher.observe(true)
@@ -32,8 +33,8 @@ describe('BeforeDecorator', () => {
   })
 
   it('should have access to the parameters', () => {
-    let returnValue: boolean
-    let originalMethodValue: boolean
+    let returnValue!: boolean
+    let originalMethodValue!: boolean
 
     class AccessParameters {
       @Before((value: boolean) => (returnValue = value))

@@ -2,6 +2,8 @@
   "name": "@robbiemu/handy-typescript",
   "version": "4.9.6",
   "description": "a collection of tools I use in typescript",
+  "author": "Robert Collins <roberto.tomas.cuentas@gmail.com>",
+  "license": "MIT",
   "repository": "git://github.com/robbiemu/handy-typescript.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -9,20 +11,20 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublishOnly": "npm test && npm run lint-staged",
+    "prepublishOnly": "npm test && npm run lint",
     "prepare": "npm run build && husky install",
     "build": "make",
     "pretest": "jest --clearCache",
     "test": "jest",
     "doc": "typedoc",
     "postdoc": "git add -A docs",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
     "lint-staged": "lint-staged"
   },
   "keywords": [
     "typescript"
   ],
-  "author": "Robert Collins <roberto.tomas.cuentas@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "md5": "^2.3.0",
     "priorityqueue": "^1.0.0",

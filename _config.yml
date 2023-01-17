@@ -1,7 +1,19 @@
+# Site settings
+title: @robbiemu/handy-typescript
+baseurl: "/docs"
+
+# Build settings
+source: docs
+
+# Jekyll settings
+markdown: kramdown
+
+# Extensions
 plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - docs
+  - jekyll-paginate
+
+# Define the path where the documentation markdown files are located
+docs_dir: ""
+
+# Define the first file of the documentation
+default_doc: modules.md

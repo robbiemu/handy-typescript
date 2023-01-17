@@ -58,7 +58,7 @@ the key
 
 #### Defined in
 
-[src/utility/entry.ts:15](https://github.com/robbiemu/handy-typescript/blob/f9d9420/src/utility/entry.ts#L15)
+[src/utility/entry.ts:15](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/entry.ts#L15)
 
 ___
 
@@ -93,7 +93,7 @@ helper args to the reduce function which produces the max key according to the g
 
 #### Defined in
 
-[src/utility/entry.ts:35](https://github.com/robbiemu/handy-typescript/blob/f9d9420/src/utility/entry.ts#L35)
+[src/utility/entry.ts:35](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/entry.ts#L35)
 
 ___
 
@@ -128,7 +128,7 @@ helper args to the reduce function which produces all maximal keys according to 
 
 #### Defined in
 
-[src/utility/entry.ts:59](https://github.com/robbiemu/handy-typescript/blob/f9d9420/src/utility/entry.ts#L59)
+[src/utility/entry.ts:59](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/entry.ts#L59)
 
 ___
 
@@ -163,4 +163,4 @@ the value
 
 #### Defined in
 
-[src/utility/entry.ts:25](https://github.com/robbiemu/handy-typescript/blob/f9d9420/src/utility/entry.ts#L25)
+[src/utility/entry.ts:25](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/entry.ts#L25)

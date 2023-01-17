@@ -21,7 +21,7 @@ log-level to use (such as {consile.log, console.debug}, etc). defaults to {debug
 
 #### Defined in
 
-[src/decorators/log-methods.decorator.ts:12](https://github.com/robbiemu/handy-typescript/blob/b5caf77/src/decorators/log-methods.decorator.ts#L12)
+[src/decorators/log-methods.decorator.ts:12](https://github.com/robbiemu/handy-typescript/blob/e38f594/src/decorators/log-methods.decorator.ts#L12)
 
 ___
 
@@ -33,4 +33,4 @@ compile-time boolean condition for whether to apply log aop
 
 #### Defined in
 
-[src/decorators/log-methods.decorator.ts:8](https://github.com/robbiemu/handy-typescript/blob/b5caf77/src/decorators/log-methods.decorator.ts#L8)
+[src/decorators/log-methods.decorator.ts:8](https://github.com/robbiemu/handy-typescript/blob/e38f594/src/decorators/log-methods.decorator.ts#L8)

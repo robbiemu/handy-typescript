@@ -23,6 +23,7 @@
 ### Type Aliases
 
 - [ArrowFunction](modules.md#arrowfunction)
+- [Common](modules.md#common)
 - [Comparator](modules.md#comparator)
 - [Constructor](modules.md#constructor)
 - [Dictionary](modules.md#dictionary)
@@ -88,7 +89,24 @@
 
 #### Defined in
 
-[src/types/arrow-function.ts:1](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/types/arrow-function.ts#L1)
+[src/types/arrow-function.ts:1](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/types/arrow-function.ts#L1)
+
+___
+
+### Common
+
+Ƭ **Common**<`T`, `U`\>: `Record`<`Extract`<keyof `T`, keyof `U`\>, `U`[`Extract`<keyof `T`, keyof `U`\>]\>
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+| `U` |
+
+#### Defined in
+
+[src/types/common.ts:1](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/types/common.ts#L1)
 
 ___
 
@@ -104,7 +122,7 @@ ___
 
 #### Defined in
 
-[src/types/arrow-function.ts:5](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/types/arrow-function.ts#L5)
+[src/types/arrow-function.ts:5](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/types/arrow-function.ts#L5)
 
 ___
 
@@ -116,7 +134,7 @@ Constructor - a Class
 
 #### Defined in
 
-[src/types/constructor.ts:4](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/types/constructor.ts#L4)
+[src/types/constructor.ts:4](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/types/constructor.ts#L4)
 
 ___
 
@@ -138,7 +156,7 @@ Dictionary - key-value pairs
 
 #### Defined in
 
-[src/types/dictionary.ts:5](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/types/dictionary.ts#L5)
+[src/types/dictionary.ts:5](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/types/dictionary.ts#L5)
 
 ___
 
@@ -148,7 +166,7 @@ ___
 
 #### Defined in
 
-[src/decorators/dummyable.decorator.ts:66](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/decorators/dummyable.decorator.ts#L66)
+[src/decorators/dummyable.decorator.ts:66](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/decorators/dummyable.decorator.ts#L66)
 
 ___
 
@@ -168,7 +186,7 @@ simple fixed-size array type for typescript
 
 #### Defined in
 
-[src/utility/fixed-array-size.ts:5](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/fixed-array-size.ts#L5)
+[src/utility/fixed-array-size.ts:5](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/fixed-array-size.ts#L5)
 
 ___
 
@@ -201,7 +219,7 @@ ___
 
 #### Defined in
 
-[src/types/arrow-function.ts:9](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/types/arrow-function.ts#L9)
+[src/types/arrow-function.ts:9](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/types/arrow-function.ts#L9)
 
 ___
 
@@ -225,7 +243,7 @@ ___
 
 #### Defined in
 
-[src/types/constructor.ts:5](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/types/constructor.ts#L5)
+[src/types/constructor.ts:5](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/types/constructor.ts#L5)
 
 ## Variables
 
@@ -242,7 +260,7 @@ ___
 
 #### Defined in
 
-[src/utility/math-generators.ts:42](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-generators.ts#L42)
+[src/utility/math-generators.ts:42](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-generators.ts#L42)
 
 ## Functions
 
@@ -278,7 +296,7 @@ decorator execute code _after_ method completes
 
 #### Defined in
 
-[src/aop/after.decorator.ts:8](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/aop/after.decorator.ts#L8)
+[src/aop/after.decorator.ts:8](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/aop/after.decorator.ts#L8)
 
 ___
 
@@ -324,7 +342,7 @@ add support for accessors
 
 #### Defined in
 
-[src/aop/before.decorator.ts:9](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/aop/before.decorator.ts#L9)
+[src/aop/before.decorator.ts:9](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/aop/before.decorator.ts#L9)
 
 ___
 
@@ -360,7 +378,7 @@ decorator that can replace and reuse a method
 
 #### Defined in
 
-[src/decorators/dummyable.decorator.ts:7](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/decorators/dummyable.decorator.ts#L7)
+[src/decorators/dummyable.decorator.ts:7](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/decorators/dummyable.decorator.ts#L7)
 
 ___
 
@@ -398,7 +416,7 @@ the parameters with an [AopDecoratorPayload](interfaces/AopDecoratorPayload.md)
 
 #### Defined in
 
-[src/aop/interrupting-before.decorator.ts:11](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/aop/interrupting-before.decorator.ts#L11)
+[src/aop/interrupting-before.decorator.ts:11](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/aop/interrupting-before.decorator.ts#L11)
 
 ___
 
@@ -432,7 +450,7 @@ decorator to log method calls and the paramters passed
 
 #### Defined in
 
-[src/decorators/log-methods.decorator.ts:19](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/decorators/log-methods.decorator.ts#L19)
+[src/decorators/log-methods.decorator.ts:19](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/decorators/log-methods.decorator.ts#L19)
 
 ___
 
@@ -452,7 +470,7 @@ ___
 
 #### Defined in
 
-[src/decorators/mixin.decorator.ts:25](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/decorators/mixin.decorator.ts#L25)
+[src/decorators/mixin.decorator.ts:25](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/decorators/mixin.decorator.ts#L25)
 
 ___
 
@@ -472,7 +490,7 @@ ___
 
 #### Defined in
 
-[src/decorators/stateful.decorator.ts:27](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/decorators/stateful.decorator.ts#L27)
+[src/decorators/stateful.decorator.ts:27](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/decorators/stateful.decorator.ts#L27)
 
 ___
 
@@ -493,7 +511,7 @@ ___
 
 #### Defined in
 
-[src/utility/math-lambdas.ts:7](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-lambdas.ts#L7)
+[src/utility/math-lambdas.ts:7](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-lambdas.ts#L7)
 
 ___
 
@@ -516,7 +534,7 @@ asserts condition
 
 #### Defined in
 
-[src/utility/assert.ts:11](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/assert.ts#L11)
+[src/utility/assert.ts:11](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/assert.ts#L11)
 
 ___
 
@@ -540,7 +558,7 @@ json-like string without circular references
 
 #### Defined in
 
-[src/utility/clean-stringify.ts:8](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/clean-stringify.ts#L8)
+[src/utility/clean-stringify.ts:8](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/clean-stringify.ts#L8)
 
 ___
 
@@ -577,7 +595,7 @@ an array of k-lemngth choices from the set
 
 #### Defined in
 
-[src/utility/math-lambdas.ts:29](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-lambdas.ts#L29)
+[src/utility/math-lambdas.ts:29](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-lambdas.ts#L29)
 
 ___
 
@@ -613,7 +631,7 @@ a function taht will call each fn in turn
 
 #### Defined in
 
-[src/utility/compose.ts:7](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/compose.ts#L7)
+[src/utility/compose.ts:7](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/compose.ts#L7)
 
 ___
 
@@ -638,7 +656,7 @@ copy of an object without circular references
 
 #### Defined in
 
-[src/utility/clean-stringify.ts:21](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/clean-stringify.ts#L21)
+[src/utility/clean-stringify.ts:21](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/clean-stringify.ts#L21)
 
 ___
 
@@ -665,7 +683,7 @@ ___
 
 #### Defined in
 
-[src/utility/math-lambdas.ts:1](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-lambdas.ts#L1)
+[src/utility/math-lambdas.ts:1](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-lambdas.ts#L1)
 
 ___
 
@@ -686,7 +704,7 @@ ___
 
 #### Defined in
 
-[src/utility/math-lambdas.ts:10](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-lambdas.ts#L10)
+[src/utility/math-lambdas.ts:10](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-lambdas.ts#L10)
 
 ___
 
@@ -718,7 +736,7 @@ ___
 
 #### Defined in
 
-[src/decorators/stateful.decorator.ts:43](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/decorators/stateful.decorator.ts#L43)
+[src/decorators/stateful.decorator.ts:43](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/decorators/stateful.decorator.ts#L43)
 
 ___
 
@@ -742,7 +760,7 @@ compliant Dummyable conf parameter
 
 #### Defined in
 
-[src/decorators/dummyable.decorator.ts:37](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/decorators/dummyable.decorator.ts#L37)
+[src/decorators/dummyable.decorator.ts:37](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/decorators/dummyable.decorator.ts#L37)
 
 ___
 
@@ -772,7 +790,7 @@ comparator
 
 #### Defined in
 
-[src/comparitors/factory-has-property.ts:14](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/comparitors/factory-has-property.ts#L14)
+[src/comparitors/factory-has-property.ts:14](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/comparitors/factory-has-property.ts#L14)
 
 ___
 
@@ -803,7 +821,7 @@ comparator
 
 #### Defined in
 
-[src/comparitors/factory-has-value.ts:16](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/comparitors/factory-has-value.ts#L16)
+[src/comparitors/factory-has-value.ts:16](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/comparitors/factory-has-value.ts#L16)
 
 ___
 
@@ -845,7 +863,7 @@ a comparator that returns true if the input object is equal to the pattern
 
 #### Defined in
 
-[src/comparitors/is.ts:8](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/comparitors/is.ts#L8)
+[src/comparitors/is.ts:8](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/comparitors/is.ts#L8)
 
 ___
 
@@ -867,7 +885,7 @@ comparitor to find defined values
 
 #### Defined in
 
-[src/comparitors/is-defined.ts:6](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/comparitors/is-defined.ts#L6)
+[src/comparitors/is-defined.ts:6](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/comparitors/is-defined.ts#L6)
 
 ___
 
@@ -889,7 +907,7 @@ comparitor to find not defined values
 
 #### Defined in
 
-[src/comparitors/is-null-or-undefined.ts:6](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/comparitors/is-null-or-undefined.ts#L6)
+[src/comparitors/is-null-or-undefined.ts:6](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/comparitors/is-null-or-undefined.ts#L6)
 
 ___
 
@@ -911,7 +929,7 @@ comparitor to find number values
 
 #### Defined in
 
-[src/comparitors/is-number.ts:6](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/comparitors/is-number.ts#L6)
+[src/comparitors/is-number.ts:6](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/comparitors/is-number.ts#L6)
 
 ___
 
@@ -933,7 +951,7 @@ comparitor to find numeric values
 
 #### Defined in
 
-[src/comparitors/is-numeric.ts:6](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/comparitors/is-numeric.ts#L6)
+[src/comparitors/is-numeric.ts:6](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/comparitors/is-numeric.ts#L6)
 
 ___
 
@@ -953,7 +971,7 @@ ___
 
 #### Defined in
 
-[src/utility/math-lambdas.ts:18](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-lambdas.ts#L18)
+[src/utility/math-lambdas.ts:18](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-lambdas.ts#L18)
 
 ___
 
@@ -974,7 +992,7 @@ ___
 
 #### Defined in
 
-[src/utility/math-lambdas.ts:11](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-lambdas.ts#L11)
+[src/utility/math-lambdas.ts:11](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-lambdas.ts#L11)
 
 ___
 
@@ -995,7 +1013,7 @@ ___
 
 #### Defined in
 
-[src/utility/math-lambdas.ts:9](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-lambdas.ts#L9)
+[src/utility/math-lambdas.ts:9](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-lambdas.ts#L9)
 
 ___
 
@@ -1016,7 +1034,7 @@ ___
 
 #### Defined in
 
-[src/utility/math-lambdas.ts:12](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-lambdas.ts#L12)
+[src/utility/math-lambdas.ts:12](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-lambdas.ts#L12)
 
 ___
 
@@ -1037,7 +1055,7 @@ ___
 
 #### Defined in
 
-[src/utility/random-int.ts:2](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/random-int.ts#L2)
+[src/utility/random-int.ts:2](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/random-int.ts#L2)
 
 ___
 
@@ -1059,7 +1077,7 @@ simple static implementation type checking for typescript
 
 #### Defined in
 
-[src/utility/static-implements.ts:4](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/static-implements.ts#L4)
+[src/utility/static-implements.ts:4](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/static-implements.ts#L4)
 
 ___
 
@@ -1080,7 +1098,7 @@ ___
 
 #### Defined in
 
-[src/utility/math-lambdas.ts:8](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-lambdas.ts#L8)
+[src/utility/math-lambdas.ts:8](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-lambdas.ts#L8)
 
 ___
 
@@ -1100,7 +1118,7 @@ ___
 
 #### Defined in
 
-[src/utility/math-lambdas.ts:14](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/math-lambdas.ts#L14)
+[src/utility/math-lambdas.ts:14](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/math-lambdas.ts#L14)
 
 ___
 
@@ -1127,7 +1145,7 @@ ___
 
 #### Defined in
 
-[src/utility/take.ts:1](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/take.ts#L1)
+[src/utility/take.ts:1](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/take.ts#L1)
 
 ___
 
@@ -1151,7 +1169,7 @@ camel cased string
 
 #### Defined in
 
-[src/utility/to-camel-case.ts:6](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/to-camel-case.ts#L6)
+[src/utility/to-camel-case.ts:6](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/to-camel-case.ts#L6)
 
 ___
 
@@ -1195,4 +1213,4 @@ https://exploringjs.com/es6/ch_iteration.html
 
 #### Defined in
 
-[src/utility/zip.ts:17](https://github.com/robbiemu/handy-typescript/blob/9b19fc3/src/utility/zip.ts#L17)
+[src/utility/zip.ts:17](https://github.com/robbiemu/handy-typescript/blob/a550b82/src/utility/zip.ts#L17)
